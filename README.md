@@ -344,22 +344,22 @@ Attack Impossibility Proof:
 ## 📞 Security Contact
 
 ### Emergency Security Contact
-- **24/7 Security Hotline**: +1-555-SECURITY
-- **Emergency Email**: emergency@chronosvault.org
+- **24/7 Security 
+- **Emergency Email**: chronosvault@chronosvault.org
 - **PGP Key ID**: 0x1234567890ABCDEF
 - **Signal**: +1-555-VAULT-911
 
 ### Security Team
-- **Chief Security Officer**: security-cso@chronosvault.org
-- **Security Engineering**: security-eng@chronosvault.org
-- **Compliance Officer**: compliance@chronosvault.org
-- **Incident Response**: incident@chronosvault.org
+- **Chief Security Officer**:chronosvault@chronosvault.org
+- **Security Engineering**:chronosvault@chronosvault.org
+- **Compliance Officer**:chronosvault@chronosvault.org
+- **Incident Response**:chronosvault@chronosvault.org
 
 ### Vulnerability Reporting
-- **Bug Bounty**: bounty@chronosvault.org
-- **Responsible Disclosure**: disclosure@chronosvault.org
-- **Security Research**: research@chronosvault.org
-- **Partnership**: partnership@chronosvault.org
+- **Bug Bounty**: chronosvault@chronosvault.org
+- **Responsible Disclosure**: chronosvault@chronosvault.org
+- **Security Research**: chronosvault@chronosvault.org
+- **Partnership**: chronosvault@chronosvault.org
 
 ## ⚖️ Legal & Compliance
 
