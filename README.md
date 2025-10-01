@@ -2,10 +2,6 @@
 
 > Comprehensive security documentation, audit reports, compliance certifications, and emergency response procedures for the Chronos Vault ecosystem.
 
-[![Security](https://img.shields.io/badge/Security-Audited-green)](https://security.chronosvault.org)
-[![Compliance](https://img.shields.io/badge/SOC2-Type%20II-blue)](https://compliance.chronosvault.org)
-[![Bug Bounty](https://img.shields.io/badge/Bug%20Bounty-$100k-red)](https://bounty.chronosvault.org)
-[![Certifications](https://img.shields.io/badge/ISO27001-Certified-yellow)](https://certs.chronosvault.org)
 
 ## 🛡️ Security Overview
 
@@ -98,33 +94,28 @@ Attack Impossibility Proof:
   - Date: December 2024
   - Scope: All Ethereum smart contracts
   - Result: 0 critical, 0 high, 2 medium (resolved)
-  - Report: [ethereum-audit-consensys-2024.pdf](audits/ethereum-audit-consensys-2024.pdf)
 
 - **Solana Programs**: Soteria Security ✅
   - Date: November 2024
   - Scope: All Solana programs and cross-chain bridges
   - Result: 0 critical, 1 high (resolved), 3 medium (resolved)
-  - Report: [solana-audit-soteria-2024.pdf](audits/solana-audit-soteria-2024.pdf)
 
 - **TON Contracts**: CertiK ✅
   - Date: October 2024
   - Scope: TON smart contracts and quantum-resistant features
   - Result: 0 critical, 0 high, 1 medium (resolved)
-  - Report: [ton-audit-certik-2024.pdf](audits/ton-audit-certik-2024.pdf)
 
 #### Platform Security Audits
 - **Cross-Chain Protocol**: Trail of Bits ✅
   - Date: January 2025
   - Scope: Trinity Protocol and cross-chain consensus
   - Result: 0 critical, 0 high, 0 medium
-  - Report: [cross-chain-audit-trail-of-bits-2025.pdf](audits/cross-chain-audit-trail-of-bits-2025.pdf)
 
 - **Zero-Knowledge System**: Academic Review ✅
   - Date: December 2024
   - Scope: ZKShield privacy system and proof generation
   - Reviewers: MIT, Stanford, UC Berkeley cryptography researchers
   - Result: Mathematically sound, performance verified
-  - Report: [zk-academic-review-2024.pdf](audits/zk-academic-review-2024.pdf)
 
 ### Ongoing Security Assessments
 - **Monthly Penetration Testing**: Third-party security firm
@@ -193,7 +184,6 @@ Attack Impossibility Proof:
 - **Certification Body**: BSI
 - **Scope**: Information security management system
 - **Status**: ✅ Certified (Valid until June 2025)
-- **Certificate**: [iso27001-certificate-2024.pdf](certifications/iso27001-certificate-2024.pdf)
 
 #### FIPS 140-2 Level 3
 - **Scope**: Cryptographic modules
@@ -301,13 +291,13 @@ Attack Impossibility Proof:
 ## 📚 Security Documentation
 
 ### Security Guides
-- **[Security Communication Plan](security-guides/SECURITY_COMMUNICATION_PLAN.md)**: Crisis communication procedures
-- **[Emergency Response](security-guides/SECURITY_EMERGENCY_RESPONSE.md)**: Incident response protocols
-- **[UI Security Specifications](security-guides/SECURITY_UI_SPECIFICATIONS.md)**: User interface security requirements
+- **[Security Communication Plan](SECURITY_COMMUNICATION_PLAN.md)**: Crisis communication procedures
+- **[Emergency Response](SECURITY_EMERGENCY_RESPONSE.md)**: Incident response protocols
+- **[UI Security Specifications](SECURITY_UI_SPECIFICATIONS.md)**: User interface security requirements
 
 ### Technical Documentation
-- **[Security Architecture](technical/SECURITY_ARCHITECTURE.md)**: Comprehensive security design
-- **[Technical Robustness](technical/TECHNICAL_ROBUSTNESS.md)**: System resilience and fault tolerance
+- **[Security Architecture](SECURITY_ARCHITECTURE.md)**: Comprehensive security design
+- **[Technical Robustness](TECHNICAL_ROBUSTNESS.md)**: System resilience and fault tolerance
 - **[API Security](technical/SAFE_API_DOCUMENTATION.md)**: Secure API implementation
 
 ### Compliance Documentation
