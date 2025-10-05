@@ -120,7 +120,7 @@ View on [Arbiscan](https://sepolia.arbiscan.io)
 If you discover a security vulnerability:
 
 1. **DO NOT** disclose publicly
-2. Email: security@chronosvault.org
+2. Email: chronosvault@chronosvault.org
 3. Include detailed reproduction steps
 4. Allow 48 hours for initial response
 
@@ -199,6 +199,18 @@ Copyright (c) 2025 Chronos Vault
 - **Transparency**: Open source and auditable
 - **Privacy**: Zero-knowledge where possible
 - **Resilience**: Multi-chain redundancy
+
+---
+
+## 🌐 Community & Social Media
+
+Join the Chronos Vault community and stay updated on the latest developments:
+
+- **Medium**: [https://medium.com/@chronosvault](https://medium.com/@chronosvault) - Technical articles and project updates
+- **Dev.to**: [https://dev.to/chronosvault](https://dev.to/chronosvault) - Developer tutorials and guides
+- **Discord**: [https://discord.gg/WHuexYSV](https://discord.gg/WHuexYSV) - Community discussions and support
+- **X (Twitter)**: [https://x.com/chronosvaultx](https://x.com/chronosvaultx?s=21) - Latest news and announcements
+- **Email**: chronosvault@chronosvault.org
 
 ---
 
