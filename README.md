@@ -342,3 +342,23 @@ For technical documentation, visit [chronos-vault-docs](https://github.com/Chron
 
 *Last Updated: October 2025*
 *Status: Production-Ready, Architect-Approved*
+
+
+## 🚀 Latest V3 Deployments (Arbitrum Sepolia)
+
+### Circuit Breaker V3 with Emergency MultiSig
+
+| Contract | Address | Status |
+|----------|---------|--------|
+| **CrossChainBridgeV3** | `0x5bC40A7a47A2b767D948FEEc475b24c027B43867` | ✅ Deployed |
+| **CVTBridgeV3** | `0x7693a841Eec79Da879241BC0eCcc80710F39f399` | ✅ Deployed |
+| **EmergencyMultiSig** | `0xFafCA23a7c085A842E827f53A853141C8243F924` | ✅ Deployed |
+
+**V3 Features:**
+- 🛡️ All V2 circuit breaker features (500% volume spike, 20% failure rate)
+- 🚨 **NEW:** Emergency pause/resume via 2-of-3 multi-sig
+- 🔒 **NEW:** 48-hour time-lock on emergency proposals
+- ⏰ Auto-recovery (4h for bridge, 2h for CVT bridge)
+- 🚫 100% trustless (emergency controller is IMMUTABLE)
+
+[View on Arbiscan](https://sepolia.arbiscan.io)
