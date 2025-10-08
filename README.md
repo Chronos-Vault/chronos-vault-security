@@ -142,15 +142,15 @@ Continuous monitoring system for cross-chain operations with mathematical trigge
 
 | Contract | Address | Status |
 |----------|---------|--------|
-| **CVT Token** | \`0xFb419D8E32c14F774279a4dEEf330dc893257147\` | ✅ Deployed |
-| **CVT Bridge** | \`0x21De95EbA01E31173Efe1b9c4D57E58bb840bA86\` | ✅ Deployed (2-of-3) |
-| **ChronosVault** | \`0x99444B0B1d6F7b21e9234229a2AC2bC0150B9d91\` | ✅ Deployed |
-| **CrossChainBridgeV1** | \`0x13dc7df46c2e87E8B2010A28F13404580158Ed9A\` | ✅ Deployed (HTLC) |
+| **CVT Token** | `0xFb419D8E32c14F774279a4dEEf330dc893257147` | ✅ Deployed |
+| **CVT Bridge** | `0x21De95EbA01E31173Efe1b9c4D57E58bb840bA86` | ✅ Deployed (2-of-3) |
+| **ChronosVault** | `0x99444B0B1d6F7b21e9234229a2AC2bC0150B9d91` | ✅ Deployed |
+| **CrossChainBridgeV1** | `0x13dc7df46c2e87E8B2010A28F13404580158Ed9A` | ✅ Deployed (HTLC) |
 | **CVTBridgeV2** | `0xdB7F6cCf57D6c6AA90ccCC1a510589513f28cb83` | ✅ Deployed (Circuit Breaker) |
 | **CrossChainBridgeV2** | `0xe331a4390C3a5E43BA646210b63e09B64E8289e7` | ✅ Deployed (Circuit Breaker) |
-| **EmergencyMultiSig** | *Pending Deployment* | ⏳ 2-of-3 Multi-Sig |
-
-View on [Arbiscan](https://sepolia.arbiscan.io)
+| **EmergencyMultiSig** | `0xFafCA23a7c085A842E827f53A853141C8243F924` | ✅ Deployed (2-of-3) |
+| **CrossChainBridgeV3** | `0x5bC40A7a47A2b767D948FEEc475b24c027B43867` | ✅ Deployed (V3 + MultiSig) |
+| **CVTBridgeV3** | `0x7693a841Eec79Da879241BC0eCcc80710F39f399` | ✅ Deployed (V3 + MultiSig) |
 
 #### TON Testnet
 
@@ -193,8 +193,9 @@ View on [Arbiscan](https://sepolia.arbiscan.io)
 | Q1 2025 | Trinity Protocol | Pending | Coming Soon |
 | Q1 2025 | Smart Contracts | Pending | Coming Soon |
 | Q1 2025 | Cross-Chain Bridge | Pending | Coming Soon |
-| Q1 2025 | MEV Protection | Architect-Approved ✅ | Internal |
-| Q1 2025 | Circuit Breakers | Architect-Approved ✅ | Internal |
+| Q1 2025 | MEV Protection | ✅ Architect-Approved | Internal |
+| Q1 2025 | Circuit Breakers | ✅ Architect-Approved | Internal |
+| Q1 2025 | Emergency MultiSig | ✅ Deployed & Integrated | Internal |
 
 ### Testing Coverage
 
