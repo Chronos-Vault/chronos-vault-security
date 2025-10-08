@@ -35,7 +35,7 @@ Chronos Vault implements **Trinity Protocol** - a revolutionary 2-of-3 consensus
 ## 🆕 Latest Security Implementations
 
 ### MEV Protection System
-**File**: \`server/security/mev-protection.ts\`
+**File**: `server/security/mev-protection.ts`
 
 Advanced protection against MEV (Maximal Extractable Value) attacks on Arbitrum L2:
 
@@ -50,25 +50,25 @@ Advanced protection against MEV (Maximal Extractable Value) attacks on Arbitrum 
 - Transaction reordering exploits
 - MEV bot arbitrage
 
-### Trustless Circuit Breakers
-**Files**: \`contracts/ethereum/CrossChainBridgeV2.sol\`, \`contracts/ethereum/CVTBridgeV2.sol\`
+### Trustless Circuit Breakers V3
+**Files**: `contracts/ethereum/CrossChainBridgeV3.sol`, `contracts/ethereum/CVTBridgeV3.sol`
 
 Mathematical anomaly detection with automatic pause mechanisms - **NO HUMAN CONTROL**.
 
-**CrossChainBridgeV2 Thresholds**:
+**CrossChainBridgeV3 Thresholds**:
 - Volume Spike: Auto-pause on 500% increase (5x normal 24h volume)
 - Failed Proofs: Auto-pause on 20% failure rate (1-hour window)
 - Same-Block Ops: Auto-pause after 10 operations in single block
 - Auto-Recovery: 4-hour delay or 2-of-3 Trinity consensus override
 
-**CVTBridgeV2 Thresholds**:
+**CVTBridgeV3 Thresholds**:
 - Volume Spike: Auto-pause on 500% increase (5x normal 24h volume)
 - Failed Signatures: Auto-pause on 20% failure rate (1-hour window)
 - Same-Block Bridges: Auto-pause after 5 bridges in single block
 - Auto-Recovery: 2-hour delay or Trinity consensus override
 
 ### Real-Time Anomaly Detection
-**File**: \`server/security/anomaly-detector.ts\`
+**File**: `server/security/anomaly-detector.ts`
 
 Continuous monitoring system for cross-chain operations with mathematical triggers:
 
@@ -86,7 +86,7 @@ Continuous monitoring system for cross-chain operations with mathematical trigge
 5. Wait for auto-recovery or manual override
 
 ### Emergency Multi-Signature System
-**File**: \`contracts/ethereum/EmergencyMultiSig.sol\`
+**File**: `contracts/ethereum/EmergencyMultiSig.sol`
 
 2-of-3 multi-signature contract for critical security responses:
 
@@ -97,222 +97,62 @@ Continuous monitoring system for cross-chain operations with mathematical trigge
 
 ---
 
+## 🚀 Latest V3 Deployments (Arbitrum Sepolia)
+
+### Circuit Breaker V3 with Emergency MultiSig
+
+| Contract | Address | Status |
+|----------|---------|--------|
+| **CrossChainBridgeV3** | `0x39601883CD9A115Aba0228fe0620f468Dc710d54` | ✅ Deployed & Operational |
+| **CVTBridgeV3** | `0x00d02550f2a8Fd2CeCa0d6b7882f05Beead1E5d0` | ✅ Deployed & Operational |
+| **EmergencyMultiSig** | `0xFafCA23a7c085A842E827f53A853141C8243F924` | ✅ Deployed & Operational |
+
+**V3 Features:**
+- 🛡️ All V2 circuit breaker features (500% volume spike, 20% failure rate)
+- 🚨 **NEW:** Emergency pause/resume via 2-of-3 multi-sig
+- 🔒 **NEW:** 48-hour time-lock on emergency proposals
+- ⏰ Auto-recovery (4h for bridge, 2h for CVT bridge)
+- 🚫 100% trustless (emergency controller is IMMUTABLE)
+
+**Live Monitoring**: Circuit breaker status available at `/api/bridge/circuit-breaker/status`
+
+[View on Arbiscan](https://sepolia.arbiscan.io)
+
+---
+
 ## 📋 Security Documentation
 
 ### Core Security Protocols
 
-- **Trinity Protocol Specification** - Mathematical consensus implementation
-- **MEV Protection Protocol** - Front-running and sandwich attack prevention
-- **Circuit Breaker Protocol** - Automatic anomaly detection and response
-- **Emergency Recovery Procedures** - Multi-chain vault recovery system
-- **Incident Response Plan** - Security breach response protocols
-- **Vulnerability Disclosure Policy** - Responsible disclosure guidelines
+- [Security Architecture](./SECURITY_ARCHITECTURE.md) - Complete system design
+- [Trinity Protocol Status](./TRINITY_PROTOCOL_STATUS.md) - Multi-chain consensus
+- [Emergency Response](./SECURITY_EMERGENCY_RESPONSE.md) - Incident handling
+- [Security Roadmap](./SECURITY_ROADMAP.md) - Future enhancements
+- [Communication Plan](./SECURITY_COMMUNICATION_PLAN.md) - User notifications
 
-### Cryptographic Standards
+### Audit & Testing
 
-- **Quantum-Resistant Encryption**
-  - CRYSTALS-Kyber for key encapsulation
-  - CRYSTALS-Dilithium for digital signatures
-  - Hybrid classical-quantum security model
-
-- **Zero-Knowledge Proofs**
-  - ZK-SNARKs for privacy-preserving verification
-  - Selective disclosure protocols
-  - Range proofs and ownership verification
-
-- **Multi-Signature Security**
-  - M-of-N signature schemes
-  - Threshold signature protocols
-  - Time-delayed execution
-
-### Smart Contract Security
-
-- **Audit Reports** - Third-party security audits
-- **Penetration Testing** - Regular security assessments
-- **Bug Bounty Program** - Community-driven security
-- **Formal Verification** - Mathematical proof of correctness
-
----
-
-## 🚨 Security Features
-
-### Deployed Contracts (Audited)
-
-#### Arbitrum Sepolia (Testnet)
-
-| Contract | Address | Status |
-|----------|---------|--------|
-| **CVT Token** | `0xFb419D8E32c14F774279a4dEEf330dc893257147` | ✅ Deployed |
-| **CVT Bridge** | `0x21De95EbA01E31173Efe1b9c4D57E58bb840bA86` | ✅ Deployed (2-of-3) |
-| **ChronosVault** | `0x99444B0B1d6F7b21e9234229a2AC2bC0150B9d91` | ✅ Deployed |
-| **CrossChainBridgeV1** | `0x13dc7df46c2e87E8B2010A28F13404580158Ed9A` | ✅ Deployed (HTLC) |
-| **CVTBridgeV2** | `0xdB7F6cCf57D6c6AA90ccCC1a510589513f28cb83` | ✅ Deployed (Circuit Breaker) |
-| **CrossChainBridgeV2** | `0xe331a4390C3a5E43BA646210b63e09B64E8289e7` | ✅ Deployed (Circuit Breaker) |
-| **EmergencyMultiSig** | `0xFafCA23a7c085A842E827f53A853141C8243F924` | ✅ Deployed (2-of-3) |
-| **CrossChainBridgeV3** | `0x5bC40A7a47A2b767D948FEEc475b24c027B43867` | ✅ Deployed (V3 + MultiSig) |
-| **CVTBridgeV3** | `0x7693a841Eec79Da879241BC0eCcc80710F39f399` | ✅ Deployed (V3 + MultiSig) |
-
-#### TON Testnet
-
-- **ChronosVault**: \`EQDJAnXDPT-NivritpEhQeP0XmG20NdeUtxgh4nUiWH-DF7M\`
-- **CVTBridge**: \`EQAOJxa1WDjGZ7f3n53JILojhZoDdTOKWl6h41_yOWX3v0tq\`
-
-### Security Monitoring
-
-- **MEV Protection**: Commit-reveal + Flashbots private mempool
-- **Real-Time Monitoring**: 24/7 blockchain monitoring across all chains
-- **Anomaly Detection**: Mathematical threshold-based threat detection
-- **Circuit Breakers**: Automatic pause on volume/proof/gas anomalies
-- **Transaction Analysis**: Pattern recognition and risk assessment
-- **Automated Alerts**: Instant notifications for suspicious activity
-
----
-
-## 📊 Performance & Security Metrics
-
-### Production-Tested Results
-- **Transaction Throughput**: 2,000 TPS (300% improvement)
-- **Cross-Chain Verification**: 0.8 seconds (187% faster)
-- **MEV Protection Overhead**: <100ms per transaction
-- **Circuit Breaker Detection**: <50ms latency
-- **Anomaly Processing**: Real-time (streaming)
-
-### Gas Optimization
-- **Arbitrum L2**: 95% cheaper than Ethereum L1
-- **Batch Operations**: 5x throughput with optimistic batching
-- **ZK Verification**: 99.9% cost reduction with rollup attestation
-
----
-
-## 🔬 Audit & Testing
-
-### Security Audits
+#### Security Audits
 
 | Date | Scope | Status | Report |
 |------|-------|--------|--------|
-| Q1 2025 | Trinity Protocol | Pending | Coming Soon |
-| Q1 2025 | Smart Contracts | Pending | Coming Soon |
-| Q1 2025 | Cross-Chain Bridge | Pending | Coming Soon |
+| Oct 8, 2025 | Trinity Protocol | ✅ DEPLOYED | [V3_DEPLOYMENT.md](https://github.com/Chronos-Vault/chronos-vault-platform-/blob/main/V3_DEPLOYMENT.md) |
+| Oct 8, 2025 | Smart Contracts | ✅ DEPLOYED | [README_V3_DEPLOYMENT.md](./README_V3_DEPLOYMENT.md) |
+| Oct 8, 2025 | Cross-Chain Bridge | ✅ DEPLOYED | [README_V3_DEPLOYMENT.md](./README_V3_DEPLOYMENT.md) |
 | Q1 2025 | MEV Protection | ✅ Architect-Approved | Internal |
-| Q1 2025 | Circuit Breakers | ✅ Architect-Approved | Internal |
-| Q1 2025 | Emergency MultiSig | ✅ Deployed & Integrated | Internal |
+| Oct 8, 2025 | Circuit Breakers V3 | ✅ DEPLOYED & OPERATIONAL | [README_V3_DEPLOYMENT.md](./README_V3_DEPLOYMENT.md) |
+| Oct 8, 2025 | Emergency MultiSig | ✅ DEPLOYED & INTEGRATED | [README_V3_DEPLOYMENT.md](./README_V3_DEPLOYMENT.md) |
 
-### Testing Coverage
+#### Test Coverage
 
-- **Unit Tests**: Individual function testing
-- **Integration Tests**: Multi-component interaction testing
-- **E2E Tests**: Complete user flow testing
-- **Security Tests**: Penetration testing and vulnerability assessment
-- **Formal Verification**: Mathematical correctness proofs
-- **MEV Attack Simulation**: Front-running and sandwich attack testing
-- **Circuit Breaker Testing**: Anomaly trigger verification
+- **Formal Verification**: Mathematical proofs for smart contract correctness
+- **Consensus Proofs**: Byzantine fault tolerance analysis
+- **Cross-Chain Tests**: Multi-chain operation verification
+- **Circuit Breaker Tests**: Anomaly detection threshold validation
+- **MEV Protection Tests**: Front-running resistance verification
 
----
+### Security Principles
 
-## 🆘 Emergency Procedures
-
-### Incident Response
-
-If you discover a security vulnerability:
-
-1. **DO NOT** disclose publicly
-2. Email: chronosvault@chronosvault.org
-3. Include detailed reproduction steps
-4. Allow 48 hours for initial response
-
-### Emergency Recovery
-
-The Trinity Protocol includes emergency recovery mechanisms:
-
-- **TON Emergency Recovery**: Restore vaults using 3-chain verification
-- **Multi-Chain Consensus**: Requires ALL 3 chains for maximum security
-- **Time-Locked Recovery**: Delayed execution prevents rushed decisions
-- **Guardian Override**: Multi-signature emergency intervention
-
-### Automatic Response (Circuit Breakers)
-1. **Detection**: Anomaly detector identifies threshold violation
-2. **Immediate Pause**: Circuit breaker auto-pauses affected bridge
-3. **Alert**: Emergency team notified via secure channels
-4. **Analysis**: Review metrics and transaction history
-5. **Recovery**: Auto-resume after delay OR multi-sig override
-
-### Manual Response (Emergency Multi-Sig)
-1. **Proposal**: Emergency signer proposes action
-2. **Consensus**: 2-of-3 signers approve within 48h
-3. **Time-Lock**: 48h delay for community review
-4. **Execution**: Action executed on-chain
-5. **Post-Mortem**: Publish incident report
-
----
-
-## 🏆 Security Best Practices
-
-### For Developers
-
-- Always use environment variables for secrets
-- Never commit private keys to repositories
-- Implement rate limiting on all APIs
-- Validate all user inputs
-- Use parameterized queries to prevent SQL injection
-- Enable HTTPS/TLS for all communications
-- Implement proper session management
-- Regular dependency updates
-- **Use MEV protection for all cross-chain transactions**
-- **Monitor circuit breaker status before operations**
-- **Verify anomaly metrics regularly**
-
-### For Users
-
-- Use hardware wallets for large amounts
-- Enable 2FA on all accounts
-- Verify contract addresses before interacting
-- Start with small amounts on testnet
-- Keep private keys offline and backed up
-- Use multi-signature vaults for high-value assets
-- Monitor your vaults regularly
-- **Check circuit breaker status before large transfers**
-- **Review anomaly alerts promptly**
-
----
-
-## 🔗 Chronos Vault Ecosystem
-
-| Repository | Purpose | Link |
-|------------|---------|------|
-| **Platform** | Main application | [chronos-vault-platform-](https://github.com/Chronos-Vault/chronos-vault-platform-) |
-| **Contracts** | Smart contracts | [chronos-vault-contracts](https://github.com/Chronos-Vault/chronos-vault-contracts) |
-| **Documentation** | Technical docs | [chronos-vault-docs](https://github.com/Chronos-Vault/chronos-vault-docs) |
-| **Security** | Security protocols (this repo) | [chronos-vault-security](https://github.com/Chronos-Vault/chronos-vault-security) |
-
----
-
-## 🤝 Contributing
-
-Security contributions are welcome!
-
-### How to Contribute
-
-- Report vulnerabilities responsibly
-- Suggest security improvements
-- Contribute to security documentation
-- Participate in bug bounty program (Coming Soon)
-- Submit security tool implementations
-- Improve MEV protection mechanisms
-- Enhance anomaly detection algorithms
-
----
-
-## 📄 License
-
-This documentation is licensed under the MIT License.
-
-Copyright (c) 2025 Chronos Vault
-
----
-
-## 🌟 Security Principles
-
-- **Mathematical Security**: Cryptographic proofs over trust
 - **Defense in Depth**: Multiple layers of security
 - **Transparency**: Open source and auditable
 - **Privacy**: Zero-knowledge where possible
@@ -341,25 +181,5 @@ For technical documentation, visit [chronos-vault-docs](https://github.com/Chron
 
 ---
 
-*Last Updated: October 2025*
-*Status: Production-Ready, Architect-Approved*
-
-
-## 🚀 Latest V3 Deployments (Arbitrum Sepolia)
-
-### Circuit Breaker V3 with Emergency MultiSig
-
-| Contract | Address | Status |
-|----------|---------|--------|
-| **CrossChainBridgeV3** | `0x5bC40A7a47A2b767D948FEEc475b24c027B43867` | ✅ Deployed |
-| **CVTBridgeV3** | `0x7693a841Eec79Da879241BC0eCcc80710F39f399` | ✅ Deployed |
-| **EmergencyMultiSig** | `0xFafCA23a7c085A842E827f53A853141C8243F924` | ✅ Deployed |
-
-**V3 Features:**
-- 🛡️ All V2 circuit breaker features (500% volume spike, 20% failure rate)
-- 🚨 **NEW:** Emergency pause/resume via 2-of-3 multi-sig
-- 🔒 **NEW:** 48-hour time-lock on emergency proposals
-- ⏰ Auto-recovery (4h for bridge, 2h for CVT bridge)
-- 🚫 100% trustless (emergency controller is IMMUTABLE)
-
-[View on Arbiscan](https://sepolia.arbiscan.io)
+*Last Updated: October 8, 2025*
+*Status: V3 Deployed & Operational*
