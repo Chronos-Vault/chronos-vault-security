@@ -146,8 +146,8 @@ Continuous monitoring system for cross-chain operations with mathematical trigge
 | **CVT Bridge** | \`0x21De95EbA01E31173Efe1b9c4D57E58bb840bA86\` | ✅ Deployed (2-of-3) |
 | **ChronosVault** | \`0x99444B0B1d6F7b21e9234229a2AC2bC0150B9d91\` | ✅ Deployed |
 | **CrossChainBridgeV1** | \`0x13dc7df46c2e87E8B2010A28F13404580158Ed9A\` | ✅ Deployed (HTLC) |
-| **CVTBridgeV2** | *Pending Deployment* | ⏳ Circuit Breaker |
-| **CrossChainBridgeV2** | *Pending Deployment* | ⏳ Circuit Breaker |
+| **CVTBridgeV2** | `0xdB7F6cCf57D6c6AA90ccCC1a510589513f28cb83` | ✅ Deployed (Circuit Breaker) |
+| **CrossChainBridgeV2** | `0xe331a4390C3a5E43BA646210b63e09B64E8289e7` | ✅ Deployed (Circuit Breaker) |
 | **EmergencyMultiSig** | *Pending Deployment* | ⏳ 2-of-3 Multi-Sig |
 
 View on [Arbiscan](https://sepolia.arbiscan.io)
