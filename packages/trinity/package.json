@@ -1,0 +1,25 @@
+{
+  "name": "@chronos-vault/trinity",
+  "version": "1.0.0",
+  "description": "Trinity Protocol - 2-of-3 Multi-Chain Consensus (Arbitrum, Solana, TON)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [
+    "trinity-protocol",
+    "multi-chain",
+    "consensus",
+    "cross-chain"
+  ],
+  "dependencies": {
+    "ethers": "^6.4.0",
+    "@solana/web3.js": "^1.87.0",
+    "@ton/ton": "^13.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
