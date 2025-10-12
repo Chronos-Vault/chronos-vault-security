@@ -1,5 +1,12 @@
 # Chronos Vault Security - Mathematical Defense Layer
 
+
+![Security](https://img.shields.io/badge/Security-Mathematically_Proven-brightgreen)
+![Formal Verification](https://img.shields.io/badge/Lean_4-35%2F35_Theorems-success)
+![ZK Proofs](https://img.shields.io/badge/ZK-Groth16-blue)
+![Quantum Safe](https://img.shields.io/badge/Quantum-ML--KEM--1024-purple)
+![License](https://img.shields.io/badge/license-MIT-blue)
+
 ## Overview
 
 The Mathematical Defense Layer (MDL) is the world's first fully integrated cryptographic security system where every security claim is mathematically provable, not just audited.
