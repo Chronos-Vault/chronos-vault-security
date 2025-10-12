@@ -1,0 +1,21 @@
+{
+  "name": "@chronos-vault/vdf",
+  "version": "1.0.0",
+  "description": "Verifiable Delay Functions - Wesolowski VDF Time-Lock System",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [
+    "vdf",
+    "time-lock",
+    "wesolowski",
+    "cryptography"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
