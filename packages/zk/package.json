@@ -1,0 +1,25 @@
+{
+  "name": "@chronos-vault/zk",
+  "version": "1.0.0",
+  "description": "Zero-Knowledge Proof System - Groth16 Protocol with Circom",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [
+    "zero-knowledge",
+    "groth16",
+    "circom",
+    "snarkjs",
+    "privacy"
+  ],
+  "dependencies": {
+    "snarkjs": "^0.7.0",
+    "circomlib": "^2.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
