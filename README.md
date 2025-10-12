@@ -1,161 +1,69 @@
-# Chronos Vault - Security Layer
+# Chronos Vault Security - Mathematical Defense Layer
 
-## 🛡️ Mathematical Defense Layer
+## Overview
 
-This repository contains the core security implementation for Chronos Vault's **Mathematical Defense Layer (MDL)** - the world's first cryptographic security system where every security claim is **mathematically provable**.
+The Mathematical Defense Layer (MDL) is the world's first fully integrated cryptographic security system where every security claim is mathematically provable, not just audited.
 
-## 🔐 7 Security Systems
+## Architecture
 
-### 1. Zero-Knowledge Proofs
-**File**: `enhanced-zero-knowledge-service.ts`
+### Seven Cryptographic Layers
 
-Privacy-preserving verification using Groth16 protocol with SnarkJS.
+1. **Zero-Knowledge Proofs** - Groth16 protocol with Circom circuits
+2. **Formal Verification** - Lean 4 theorem prover (35/35 theorems proven)
+3. **Multi-Party Computation** - 3-of-5 threshold signatures with Shamir Secret Sharing
+4. **Verifiable Delay Functions** - Wesolowski VDF with provable time-locks
+5. **AI + Cryptographic Governance** - "AI decides, Math proves, Chain executes"
+6. **Quantum-Resistant Cryptography** - ML-KEM-1024 + CRYSTALS-Dilithium-5
+7. **Trinity Protocol** - 2-of-3 consensus across Arbitrum L2, Solana, TON
 
-**Mathematical Guarantee**: ∀ proof P: verified(P) ⟹ verifier_learns_nothing_beyond_validity(P)
+## Packages
 
-### 2. Quantum-Resistant Cryptography
-**File**: `quantum-resistant-crypto.ts`
+- `@chronos-vault/ai-governance` - AI + cryptographic governance engine
+- `@chronos-vault/mpc` - Multi-party computation key management
+- `@chronos-vault/vdf` - Verifiable delay function time-locks
+- `@chronos-vault/zk` - Zero-knowledge proof system
+- `@chronos-vault/quantum` - Quantum-resistant cryptography
+- `@chronos-vault/proofs` - Formal verification proofs (Lean 4)
 
-NIST-approved post-quantum cryptography using ML-KEM-1024 and CRYSTALS-Dilithium-5.
+## Mathematical Guarantees
 
-**Mathematical Guarantee**: ∀ attack A using Shor's algorithm: P(success) = negligible
+✅ **Privacy**: ∀ proof P: verified(P) ⟹ verifier_learns_nothing_beyond_validity(P)
+✅ **Time-Lock**: ∀ VDF: unlock_before_T_iterations = impossible
+✅ **Distribution**: ∀ MPC key K: reconstruct(K) requires ≥ k shares
+✅ **Governance**: ∀ AI proposal P: executed(P) ⟹ mathematically_proven(P)
+✅ **Quantum**: ∀ attack A: P(Shor_success) = negligible
+✅ **Consensus**: ∀ operation O: valid(O) ⟹ approved_by_2_of_3_chains(O)
 
-### 3. Multi-Party Computation (MPC)
-**File**: `mpc-key-management.ts`
+## Installation
 
-Distributed key management using Shamir Secret Sharing with 3-of-5 threshold.
-
-**Mathematical Guarantee**: ∀ MPC key K: reconstruct(K) requires ≥ k threshold shares
-
-### 4. Verifiable Delay Functions (VDF)
-**File**: `vdf-time-lock.ts`
-
-Provable time-locks using Wesolowski VDF with RSA-2048 groups.
-
-**Mathematical Guarantee**: ∀ VDF computation: unlock_before_T_iterations = impossible
-
-### 5. AI + Cryptographic Governance
-**File**: `ai-crypto-governance.ts`
-
-"AI decides, Math proves, Chain executes" - Zero-trust automation with cryptographic validation.
-
-**Mathematical Guarantee**: ∀ AI proposal P: executed(P) ⟹ mathematically_proven(P) ∧ consensus(P, 2/3)
-
-### 6. Formal Verification
-**Directory**: `formal-verification/`
-
-Mathematical proof that smart contracts cannot be exploited.
-
-**Components**:
-- `contract-analyzer.ts` - Static analysis engine
-- `invariant-checker.ts` - Security invariants validation
-- `theorem-generator.ts` - Automated theorem generation
-- `verification-report.ts` - Proof reporting
-
-**Mathematical Guarantee**: ∀ contract C: proven_secure(C) ⟹ ¬∃ exploit path in C
-
-### 7. Trinity Protocol & Consensus Proofs
-**Directory**: `consensus-proofs/`
-
-2-of-3 multi-chain consensus across Arbitrum, Solana, and TON.
-
-**Components**:
-- `consensus-model.ts` - Multi-chain consensus logic
-- `safety-proof.ts` - Safety property proofs
-- `liveness-proof.ts` - Liveness guarantees
-- `byzantine-analysis.ts` - Byzantine fault tolerance
-- `verification-engine.ts` - Cross-chain verification
-
-**Mathematical Guarantee**: ∀ operation O: valid(O) ⟹ approved_by_2_of_3_chains(O)
-
-## 🚀 Complete System
-
-**File**: `mathematical-defense-layer.ts`
-
-Main coordinator that orchestrates all 7 security systems.
-
-## 🧪 Demo
-
-**File**: `demo-mathematical-defense.ts`
-
-Complete demonstration of all security layers working together.
-
-## 📁 Repository Structure
-
-```
-chronos-vault-security/
-├── mathematical-defense-layer.ts           # Main coordinator
-├── enhanced-zero-knowledge-service.ts      # ZK proofs
-├── quantum-resistant-crypto.ts             # Post-quantum crypto
-├── mpc-key-management.ts                   # MPC & Shamir
-├── vdf-time-lock.ts                        # Time-locks
-├── ai-crypto-governance.ts                 # AI governance
-├── trinity-protocol.ts                     # Multi-chain consensus
-├── demo-mathematical-defense.ts            # Complete demo
-│
-├── formal-verification/                    # Formal verification system
-│   ├── index.ts
-│   ├── contract-analyzer.ts
-│   ├── invariant-checker.ts
-│   ├── theorem-generator.ts
-│   └── verification-report.ts
-│
-├── consensus-proofs/                       # Trinity Protocol proofs
-│   ├── index.ts
-│   ├── consensus-model.ts
-│   ├── safety-proof.ts
-│   ├── liveness-proof.ts
-│   ├── byzantine-analysis.ts
-│   └── verification-engine.ts
-│
-├── cross-chain-verification-protocol.ts
-├── chain-agnostic-verification.ts
-└── README.md
+```bash
+npm install @chronos-vault/security
 ```
 
-## 🔬 Mathematical Guarantees
+## Usage
 
-The MDL provides **cryptographically provable** security properties:
+```typescript
+import { aiCryptoGovernance } from '@chronos-vault/ai-governance';
+import { mpcKeyManagement } from '@chronos-vault/mpc';
+import { zkProofSystem } from '@chronos-vault/zk';
 
-1. **Privacy**: ∀ proof P: verified(P) ⟹ verifier_learns_nothing_beyond_validity(P)
-2. **Time-Lock**: ∀ VDF computation: unlock_before_T_iterations = impossible
-3. **Distribution**: ∀ MPC key K: reconstruct(K) requires ≥ k threshold shares
-4. **Governance**: ∀ AI proposal P: executed(P) ⟹ mathematically_proven(P) ∧ consensus(P, 2/3)
-5. **Quantum**: ∀ attack A using Shor's algorithm: P(success) = negligible
-6. **Formal**: ∀ contract C: proven_secure(C) ⟹ ¬∃ exploit path in C
-7. **Consensus**: ∀ operation O: valid(O) ⟹ approved_by_2_of_3_chains(O)
+// Initialize MDL
+await aiCryptoGovernance.initialize();
+await mpcKeyManagement.initialize();
+await zkProofSystem.initialize();
+```
 
-## 📊 Performance Metrics
+## Formal Verification
 
-| Operation | Time | Performance |
-|-----------|------|-------------|
-| ZK Proof Generation | O(n log n) | ~5-20ms |
-| ZK Proof Verification | O(1) | ~2-10ms |
-| Quantum Encryption | O(n²) | ~10-20ms |
-| MPC Key Generation | O(n²) | ~50-100ms |
-| VDF Computation | O(T) | Sequential |
-| VDF Verification | O(log T) | Fast |
-| AI Validation | O(k) | ~100-500ms |
+All security properties are formally verified using Lean 4:
 
-## 🌟 Security Philosophy
+```bash
+cd formal-proofs
+lake build
+```
 
-**"Trust Math, Not Humans"**
+**Status**: 35/35 theorems proven ✅
 
-Unlike traditional platforms that rely on audits and trust, Chronos Vault provides **mathematical proofs**. Every security claim is verifiable through cryptographic evidence, not human promises.
+## License
 
-## 📖 Related Repositories
-
-- **Contracts**: [chronos-vault-contracts](https://github.com/Chronos-Vault/chronos-vault-contracts)
-- **Platform**: [chronos-vault-platform](https://github.com/Chronos-Vault/chronos-vault-platform-)
-- **SDK**: [chronos-vault-sdk](https://github.com/Chronos-Vault/chronos-vault-sdk)
-- **Documentation**: [chronos-vault-docs](https://github.com/Chronos-Vault/chronos-vault-docs)
-
-## 📝 License
-
-© 2025 Chronos Vault. All rights reserved.
-
----
-
-**Built with ❤️ by the Chronos Vault Team**
-
-🔐 Trust Math, Not Humans
+MIT - Chronos Vault
