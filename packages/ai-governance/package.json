@@ -1,0 +1,25 @@
+{
+  "name": "@chronos-vault/ai-governance",
+  "version": "1.0.0",
+  "description": "AI + Cryptographic Governance System - Mathematical proof-based decision making",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [
+    "ai",
+    "governance",
+    "cryptography",
+    "blockchain"
+  ],
+  "dependencies": {
+    "ethers": "^6.4.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
