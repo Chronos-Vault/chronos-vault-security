@@ -1,0 +1,23 @@
+{
+  "name": "@chronos-vault/mpc",
+  "version": "1.0.0",
+  "description": "Multi-Party Computation Key Management - 3-of-5 Threshold Signatures",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [
+    "mpc",
+    "threshold-signature",
+    "shamir-secret-sharing",
+    "cryptography"
+  ],
+  "dependencies": {
+    "ethers": "^6.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
