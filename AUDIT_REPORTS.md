@@ -226,7 +226,7 @@ lake build
 
 Found a security issue? See our [Security Policy](./SECURITY.md)
 
-- **Email**: security@chronosvault.org
+- **Email**: chronosvault@chronosvault.org
 - **Bug Bounty**: [BUG_BOUNTY.md](./BUG_BOUNTY.md) ($500 - $50,000)
 - **Response Time**: 24-72 hours
 
@@ -257,7 +257,7 @@ Found a security issue? See our [Security Policy](./SECURITY.md)
 
 Interested in auditing Chronos Vault? Contact us:
 
-**Email**: security@chronosvault.org
+**Email**: chronosvault@chronosvault.org
 
 **Provide**:
 1. Firm background and credentials
