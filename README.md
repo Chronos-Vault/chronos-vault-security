@@ -19,6 +19,27 @@
 
 ---
 
+
+## 🚀 Quick Verification (5 minutes)
+
+Verify our 35/35 proven security theorems yourself:
+
+```bash
+# Install Lean 4
+curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh
+
+# Clone and verify
+git clone https://github.com/Chronos-Vault/chronos-vault-security.git
+cd chronos-vault-security/formal-proofs
+lake build
+
+# Result: ✅ All 35/35 theorems verified
+```
+
+**"Trust Math, Not Humans"** - Don't take our word for it, verify the proofs yourself!
+
+See [VERIFY_YOURSELF.md](./formal-proofs/VERIFY_YOURSELF.md) for detailed guide.
+
 ## 🛡️ Overview
 
 The Mathematical Defense Layer (MDL) - **world's first fully integrated cryptographic security system** where every security claim is mathematically provable, not just audited.
@@ -195,3 +216,27 @@ Copyright (c) 2025 Chronos Vault
 ---
 
 **Built with ❤️ for the future of mathematically provable blockchain security**
+
+
+## 📞 Security Contact
+
+- **Report Vulnerabilities**: security@chronosvault.org
+- **Bug Bounty**: $500 - $50,000 rewards ([Details](./BUG_BOUNTY.md))
+- **Emergency**: See [INCIDENT_RESPONSE.md](./INCIDENT_RESPONSE.md)
+- **General**: chronosvault@chronosvault.org
+- **Website**: https://chronosvault.org
+
+
+## 📚 Security Documentation
+
+### Essential Resources
+- 🛡️ [Security Policy](./SECURITY.md) - Vulnerability disclosure guidelines
+- 💰 [Bug Bounty Program](./BUG_BOUNTY.md) - $500k allocated for security research
+- 📊 [Audit Reports](./AUDIT_REPORTS.md) - Formal verification status (35/35 proven)
+- 🚨 [Incident Response](./INCIDENT_RESPONSE.md) - Emergency protocols
+- 🤝 [Code of Conduct](./CODE_OF_CONDUCT.md) - Security researcher ethics
+
+### Formal Verification
+- [Verify Yourself](./formal-proofs/VERIFY_YOURSELF.md) - 5-minute verification guide
+- [For Developers](./docs/formal-verification/FOR_DEVELOPERS.md) - Integration guide
+- [Mathematical Security](./MATHEMATICAL_SECURITY_GUARANTEES.md) - Security philosophy
