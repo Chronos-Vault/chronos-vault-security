@@ -38,7 +38,7 @@ lake build
 
 **"Trust Math, Not Humans"** - Don't take our word for it, verify the proofs yourself!
 
-See [VERIFY_YOURSELF.md](./formal-proofs/VERIFY_YOURSELF.md) for detailed guide.
+See [VERIFY_YOURSELF.md](https://github.com/Chronos-Vault/chronos-vault-security/blob/main/formal-proofs/VERIFY_YOURSELF.md) for detailed guide.
 
 ## 🛡️ Overview
 
@@ -237,6 +237,6 @@ Copyright (c) 2025 Chronos Vault
 - 🤝 [Code of Conduct](./CODE_OF_CONDUCT.md) - Security researcher ethics
 
 ### Formal Verification
-- [Verify Yourself](./formal-proofs/VERIFY_YOURSELF.md) - 5-minute verification guide
-- [For Developers](./docs/formal-verification/FOR_DEVELOPERS.md) - Integration guide
+- [Verify Yourself](https://github.com/Chronos-Vault/chronos-vault-security/blob/main/formal-proofs/VERIFY_YOURSELF.md) - 5-minute verification guide
+- [For Developers](https://github.com/Chronos-Vault/chronos-vault-security/blob/main/docs/formal-verification/FOR_DEVELOPERS.md) - Integration guide
 - [Mathematical Security](./MATHEMATICAL_SECURITY_GUARANTEES.md) - Security philosophy
