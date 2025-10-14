@@ -206,7 +206,7 @@ Every commit automatically re-verifies all theorems:
 ## 🚨 Found an Issue?
 
 If verification fails or you find a problem:
-1. **Report**: security@chronosvault.org
+1. **Report**: chronosvault@chronosvault.org
 2. **Include**: Error output from `lake build`
 3. **Reward**: $500 - $50,000 bug bounty
 4. **Process**: [Responsible Disclosure](./SECURITY.md)
@@ -241,4 +241,4 @@ After running `lake build`, confirm:
 
 **"Trust Math, Not Humans"** - Verify it yourself in 5 minutes!
 
-*Contact: security@chronosvault.org*
+*Contact: chronosvault@chronosvault.org*
