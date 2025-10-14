@@ -19,7 +19,7 @@ Chronos Vault is committed to fostering a safe, respectful, and collaborative se
 
 #### Research & Testing
 - **Test on testnets** (Arbitrum Sepolia, Solana Devnet, TON Testnet)
-- **Report privately** to security@chronosvault.org
+- **Report privately** to chronosvault@chronosvault.org
 - **Provide clear details** (reproduction steps, impact analysis)
 - **Collaborate respectfully** with our security team
 - **Wait for fixes** before public disclosure (90 days)
