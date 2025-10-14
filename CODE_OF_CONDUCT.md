@@ -158,7 +158,7 @@ Researchers who follow this code of conduct will be recognized in our:
 ### Violation Reports
 If you witness a violation of this code of conduct:
 
-**Report to**: security@chronosvault.org  
+**Report to**: chronosvault@chronosvault.org  
 **Subject**: "Code of Conduct Violation - [Brief Description]"
 
 Include:
