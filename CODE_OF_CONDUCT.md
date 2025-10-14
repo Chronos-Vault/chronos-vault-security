@@ -61,7 +61,7 @@ Chronos Vault is committed to fostering a safe, respectful, and collaborative se
 ## 🔐 Responsible Disclosure
 
 ### Timeline
-1. **Day 0**: Report vulnerability to security@chronosvault.org
+1. **Day 0**: Report vulnerability to chronosvault@chronosvault.org
 2. **Day 1**: Receive acknowledgment (24 hours)
 3. **Day 3**: Initial assessment and severity classification
 4. **Day 7-30**: Fix development and testing
@@ -195,7 +195,7 @@ Include:
 ## 🔄 Appeals Process
 
 ### If You Disagree
-1. **Email**: security@chronosvault.org with "APPEAL" in subject
+1. **Email**: chronosvault@chronosvault.org with "APPEAL" in subject
 2. **Explain**: Your perspective on the situation
 3. **Evidence**: Provide any mitigating information
 4. **Timeline**: Response within 7 days
@@ -252,7 +252,7 @@ For serious disputes, we offer:
 ## 📞 Contact
 
 ### Security Team
-- **Email**: security@chronosvault.org
+- **Email**: chronosvault@chronosvault.org
 - **PGP Key**: [Available on keyserver]
 - **Response Time**: 24-72 hours
 
