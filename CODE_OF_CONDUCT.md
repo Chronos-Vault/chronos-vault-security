@@ -19,7 +19,7 @@ Chronos Vault is committed to fostering a safe, respectful, and collaborative se
 
 #### Research & Testing
 - **Test on testnets** (Arbitrum Sepolia, Solana Devnet, TON Testnet)
-- **Report privately** to chronosvault@chronosvault.org
+- **Report privately** to security@chronosvault.org
 - **Provide clear details** (reproduction steps, impact analysis)
 - **Collaborate respectfully** with our security team
 - **Wait for fixes** before public disclosure (90 days)
@@ -61,7 +61,7 @@ Chronos Vault is committed to fostering a safe, respectful, and collaborative se
 ## 🔐 Responsible Disclosure
 
 ### Timeline
-1. **Day 0**: Report vulnerability to chronosvault@chronosvault.org
+1. **Day 0**: Report vulnerability to security@chronosvault.org
 2. **Day 1**: Receive acknowledgment (24 hours)
 3. **Day 3**: Initial assessment and severity classification
 4. **Day 7-30**: Fix development and testing
@@ -158,7 +158,7 @@ Researchers who follow this code of conduct will be recognized in our:
 ### Violation Reports
 If you witness a violation of this code of conduct:
 
-**Report to**: chronosvault@chronosvault.org  
+**Report to**: security@chronosvault.org  
 **Subject**: "Code of Conduct Violation - [Brief Description]"
 
 Include:
@@ -195,7 +195,7 @@ Include:
 ## 🔄 Appeals Process
 
 ### If You Disagree
-1. **Email**: chronosvault@chronosvault.org with "APPEAL" in subject
+1. **Email**: security@chronosvault.org with "APPEAL" in subject
 2. **Explain**: Your perspective on the situation
 3. **Evidence**: Provide any mitigating information
 4. **Timeline**: Response within 7 days
@@ -252,7 +252,7 @@ For serious disputes, we offer:
 ## 📞 Contact
 
 ### Security Team
-- **Email**: chronosvault@chronosvault.org
+- **Email**: security@chronosvault.org
 - **PGP Key**: [Available on keyserver]
 - **Response Time**: 24-72 hours
 
