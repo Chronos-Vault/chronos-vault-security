@@ -29,7 +29,7 @@ We take security issues seriously. If you discover a vulnerability, please follo
 
 ### 2. **Report Securely**
 
-**Email**: chronosvaulty@chronosvault.org
+**Email**: security@chronosvault.org
 
 **Include**:
 1. **Description**: Clear explanation of the vulnerability
@@ -192,6 +192,7 @@ See **[INCIDENT_RESPONSE.md](./INCIDENT_RESPONSE.md)** for full protocol.
 
 ## 📞 Contact
 
+- **Security Issues**: security@chronosvault.org
 - **General Inquiries**: chronosvault@chronosvault.org
 - **Website**: https://chronosvault.org
 - **GitHub**: https://github.com/Chronos-Vault
