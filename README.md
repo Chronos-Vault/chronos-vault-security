@@ -27,6 +27,22 @@ Unlike traditional security audits that check for known vulnerabilities, our for
 
 ---
 
+## 🔗 Essential Resources
+
+- 🛡️ [**Security Policy**](./SECURITY.md) - Vulnerability disclosure guidelines
+- 💰 [**Bug Bounty Program**](./BUG_BOUNTY.md) - $500k allocated for security research
+- 📊 [**Audit Reports**](./CHRONOS_VAULT_SECURITY_AUDIT_OCT2025.md) - Formal verification status (35/35 proven)
+- 🚨 [**Incident Response**](./INCIDENT_RESPONSE.md) - Emergency protocols
+- 🤝 [**Code of Conduct**](./CODE_OF_CONDUCT.md) - Security researcher ethics
+
+## 📐 Formal Verification
+
+- ✅ [**Verify Yourself**](./formal-proofs/VERIFY_YOURSELF.md) - 5-minute verification guide
+- 👨‍💻 [**For Developers**](./docs/FOR_DEVELOPERS.md) - Integration guide
+- 🔐 [**Mathematical Security**](./docs/MATHEMATICAL_DEFENSE_LAYER.md) - Security philosophy
+
+---
+
 ## 🚀 Quick Start
 
 ### Verify Security Proofs Yourself (5 minutes)
