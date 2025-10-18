@@ -27,22 +27,6 @@ Unlike traditional security audits that check for known vulnerabilities, our for
 
 ---
 
-## 🔗 Essential Resources
-
-- 🛡️ [**Security Policy**](./SECURITY.md) - Vulnerability disclosure guidelines
-- 💰 [**Bug Bounty Program**](./BUG_BOUNTY.md) - $500k allocated for security research
-- 📊 [**Audit Reports**](./CHRONOS_VAULT_SECURITY_AUDIT_OCT2025.md) - Formal verification status (35/35 proven)
-- 🚨 [**Incident Response**](./INCIDENT_RESPONSE.md) - Emergency protocols
-- 🤝 [**Code of Conduct**](./CODE_OF_CONDUCT.md) - Security researcher ethics
-
-## 📐 Formal Verification
-
-- ✅ [**Verify Yourself**](./formal-proofs/VERIFY_YOURSELF.md) - 5-minute verification guide
-- 👨‍💻 [**For Developers**](./docs/FOR_DEVELOPERS.md) - Integration guide
-- 🔐 [**Mathematical Security**](./docs/MATHEMATICAL_DEFENSE_LAYER.md) - Security philosophy
-
----
-
 ## 🚀 Quick Start
 
 ### Verify Security Proofs Yourself (5 minutes)
@@ -337,21 +321,26 @@ npm run test:coverage         # Generate coverage report
 
 ## 📚 Documentation
 
+### 🔗 Essential Resources
+
+- 🛡️ [**Security Policy**](./SECURITY.md) - Vulnerability disclosure guidelines
+- 💰 [**Bug Bounty Program**](./BUG_BOUNTY.md) - $500k allocated for security research
+- 📊 [**Audit Reports**](./CHRONOS_VAULT_SECURITY_AUDIT_OCT2025.md) - Formal verification status (35/35 proven)
+- 🚨 [**Incident Response**](./INCIDENT_RESPONSE.md) - Emergency protocols
+- 🤝 [**Code of Conduct**](./CODE_OF_CONDUCT.md) - Security researcher ethics
+
+### 📐 Formal Verification
+
+- ✅ [**Verify Yourself**](./formal-proofs/VERIFY_YOURSELF.md) - 5-minute verification guide
+- 👨‍💻 [**For Developers**](./docs/FOR_DEVELOPERS.md) - Integration guide
+- 🔐 [**Mathematical Security**](./docs/MATHEMATICAL_DEFENSE_LAYER.md) - Security philosophy
+
 ### For Developers
-- [**Getting Started Guide**](./docs/GETTING_STARTED.md) - Integration tutorial
-- [**API Reference**](./docs/API_REFERENCE.md) - Complete API documentation
 - [**Security Architecture**](./docs/SECURITY_ARCHITECTURE.md) - System design
 - [**Formal Verification Explained**](./docs/FORMAL_VERIFICATION_STATUS.md) - Proof breakdown
 
-### For Security Researchers
-- [**Security Audit (Oct 2025)**](./CHRONOS_VAULT_SECURITY_AUDIT_OCT2025.md) - FOUND → FIXED report
-- [**Bug Bounty Program**](./BUG_BOUNTY.md) - Responsible disclosure
-- [**Verification Guide**](./docs/VERIFY_YOURSELF.md) - Verify proofs yourself
-- [**Mathematical Guarantees**](./docs/MATHEMATICAL_DEFENSE_LAYER.md) - Detailed proofs
-
 ### For Contributors
 - [**Contributing Guidelines**](./CONTRIBUTING.md) - How to contribute
-- [**Code of Conduct**](./CODE_OF_CONDUCT.md) - Community standards
 - [**Development Setup**](./docs/DEVELOPMENT.md) - Local environment
 
 ---
