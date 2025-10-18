@@ -391,14 +391,15 @@ How we're ensuring this never happens again.
 ## 📞 Emergency Contacts
 
 ### Internal
-- **Security Team**:chronosvault@chronosvault.org
+- **Security Team**: security@chronosvault.org
 - **Emergency Hotline**: [Encrypted Signal group]
 - **Multi-Sig Signers**: [Secure contact list]
 
 ### External
-- **Arbitrum Team**: [[Contact](https://arbitrum.io/)]
-- **Solana Foundation**: [[Contact](https://solana.org/)]
-- **TON Foundation**: [[Contact](https://ton.org/)]
+- **Arbitrum Team**: [Contact]
+- **Solana Foundation**: [Contact]
+- **TON Foundation**: [Contact]
+- **External Auditors**: [Contact]
 
 ---
 
