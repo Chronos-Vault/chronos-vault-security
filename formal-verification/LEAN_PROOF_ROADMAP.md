@@ -1,8 +1,9 @@
+<!-- Chronos Vault - Trinity Protocol™ -->
 # Lean 4 Formal Verification Roadmap
 
 ## 🎯 Executive Summary
 
-Chronos Vault has established a **formal verification framework** using Lean 4 theorem prover to mathematically prove security properties of the Trinity Protocol. The architecture is complete, theorem statements are defined, and proof completion is in progress.
+Chronos Vault has established a **formal verification framework** using Lean 4 theorem prover to mathematically prove security properties of the Trinity Protocol™. The architecture is complete, theorem statements are defined, and proof completion is in progress.
 
 **Current Status:** 78 theorem statements formally defined | 70 proof obligations remaining | 8 proofs complete
 
@@ -84,7 +85,7 @@ Chronos Vault has established a **formal verification framework** using Lean 4 t
 - ✅ Theorem 71: No Single Point of Failure
 - ✅ Theorem 72: Liveness Under Majority (2+ chains operational)
 - ✅ Theorem 73: Attack Resistance (requires 2+ chain compromise)
-- ✅ Theorem 74: Composite Trinity Protocol security
+- ✅ Theorem 74: Composite Trinity Protocol™ security
 
 **AIGovernance.lean** - 4 theorems
 - ✅ Theorem 75: AI Decision Validation (cryptographic proof required)
@@ -251,7 +252,7 @@ Chronos Vault has established a **formal verification framework** using Lean 4 t
 
 ## 🏆 Industry Comparison
 
-**Chronos Vault:** 78 theorem statements (Trinity Protocol complexity)
+**Chronos Vault:** 78 theorem statements (Trinity Protocol™ complexity)
 
 **Comparison:**
 - Uniswap V3: ~20 theorems (AMM logic)
@@ -290,7 +291,7 @@ Chronos Vault has established a **formal verification framework** using Lean 4 t
 
 **Upon Completion:**
 
-> *"Every security property of Chronos Vault's Trinity Protocol has been mathematically proven using the Lean 4 theorem prover. The proofs are publicly verifiable, open-source, and automatically checked via CI/CD. Unlike traditional audits that rely on human review, our guarantees are derived from mathematical certainty - provably secure under stated cryptographic assumptions."*
+> *"Every security property of Chronos Vault's Trinity Protocol™ has been mathematically proven using the Lean 4 theorem prover. The proofs are publicly verifiable, open-source, and automatically checked via CI/CD. Unlike traditional audits that rely on human review, our guarantees are derived from mathematical certainty - provably secure under stated cryptographic assumptions."*
 
 **Trust Math, Not Humans.** ✓
 
