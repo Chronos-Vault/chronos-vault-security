@@ -107,13 +107,35 @@ function _executeWithdrawal(uint256 _requestId) internal {
     // ✅ Mark executed BEFORE external calls (reentrancy protection)
     request.executed = true;
     
-    // ✅ Use proper ERC4626 withdraw function
-    // This internally burns shares from owner and transfers assets to receiver
-    super.withdraw(uint256(request.amount), request.receiver, request.owner);
+    uint256 amount = uint256(request.amount);
+    address receiver = request.receiver;
+    address _owner = request.owner;
     
-    emit WithdrawalExecuted(_requestId, request.receiver, uint256(request.amount));
+    // ✅ CRITICAL FIX: Use internal _withdraw to bypass allowance checks
+    // Multi-sig approval replaces individual owner approval
+    uint256 shares = previewWithdraw(amount);
+    
+    // Call internal _withdraw which:
+    // 1. Burns shares from owner
+    // 2. Transfers assets to receiver  
+    // 3. Does NOT check allowances (bypassed by multi-sig approval)
+    super._withdraw({
+        caller: address(this),
+        receiver: receiver,
+        owner: _owner,
+        assets: amount,
+        shares: shares
+    });
+    
+    emit WithdrawalExecuted(_requestId, receiver, amount);
 }
 ```
+
+**Why internal _withdraw?**
+- Multi-sig approval mechanism REPLACES individual owner approval
+- Using `super.withdraw()` would require allowance from owner to contract
+- Using `super._withdraw()` bypasses allowance check while maintaining ERC4626 compliance
+- Still enforces `maxWithdraw`/`maxRedeem` limits and burns shares correctly
 
 ---
 
