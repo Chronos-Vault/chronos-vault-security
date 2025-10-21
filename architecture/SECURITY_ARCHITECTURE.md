@@ -1,3 +1,4 @@
+<!-- Chronos Vault - Trinity Protocol™ -->
 # Chronos Vault Security Architecture
 
 This document provides a detailed technical overview of the Chronos Vault security architecture for developers.
