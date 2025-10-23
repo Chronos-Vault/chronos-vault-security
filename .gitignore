@@ -1,7 +1,42 @@
-node_modules/
-dist/
-*.log
+# Replit specific
+.replit
+replit.nix
+replit.md
+.config/
+
+# Assets
+attached_assets/
+
+# Secrets
 .env
-.DS_Store
+.env.local
+.env.production
+*.pem
+*.key
+PRIVATE_KEY
+USER_WALLET_PRIVATE_KEY
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build
+dist/
+build/
+.next/
+out/
+
+# Testing
 coverage/
-.turbo/
+
+# Misc
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.vscode/
+.idea/
