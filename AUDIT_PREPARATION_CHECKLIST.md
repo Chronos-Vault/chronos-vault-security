@@ -402,7 +402,6 @@ Trinity Protocol™ is a **mathematically provable 2-of-3 multi-chain consensus 
 
 **Trinity Protocol Documentation:**
 - Technology Proof: `TRINITY_PROOF_FOR_INVESTORS.md`
-- Architecture: `replit.md`
 - Formal Proofs: `formal-proofs/` directory
 
 ---
