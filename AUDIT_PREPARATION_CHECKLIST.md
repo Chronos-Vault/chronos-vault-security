@@ -31,7 +31,7 @@ Trinity Protocol™ is a **mathematically provable 2-of-3 multi-chain consensus 
 
 **Required Documentation:**
 - [x] `TRINITY_PROOF_FOR_INVESTORS.md` - Technology validation report
-- [x] `replit.md` - System architecture and recent development
+- [x] `CHRONOS_VAULT.md` - System architecture and recent development
 - [ ] `AUDIT_SCOPE.md` - Specific contracts and areas for audit focus
 - [ ] `KNOWN_ISSUES.md` - Documented limitations and assumptions
 - [x] Formal verification proofs (`formal-proofs/` directory)
