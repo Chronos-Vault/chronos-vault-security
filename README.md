@@ -209,7 +209,7 @@ Note: Lean's type checker will catch most errors automatically, but feedback on 
 ### Bug Bounty Program
 - Valid proof errors: Up to $10,000
 - Critical security implications: Up to $50,000
-- Contact: security@chronosvault.org
+- Contact:chronosvault@chronosvault.org
 
 ## 📖 Learn More
 
