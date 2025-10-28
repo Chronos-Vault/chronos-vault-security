@@ -5,7 +5,6 @@
 [![Fuzzing](https://img.shields.io/badge/Fuzzing-10M_Iterations-brightgreen)](test/echidna/README.md)
 [![Security Score](https://img.shields.io/badge/Security_Score-7.5%2F10-green)](SECURITY.md)
 [![Lean Proofs](https://img.shields.io/badge/Lean_4_Proofs-35_Theorems-blue)](formal-proofs/README.md)
-[![Cost Saved](https://img.shields.io/badge/Cost_Saved-$50k-gold)](OPEN_SOURCE_VERIFICATION_SUMMARY.md)
 [![Open Source](https://img.shields.io/badge/Verification-100%25_Open_Source-success)](contracts/verification/README.md)
 [![Attack Resistance](https://img.shields.io/badge/Attack_Probability-≤10^--12-critical)](SECURITY.md)
 
@@ -15,8 +14,7 @@
 
 ### ✅ Formal Verification Complete
 - **77 mathematically proven** security properties
-- **$0 cost** (vs $50k Certora)
-- **4 verification tools** (Halmos, Echidna, SMTChecker, Slither)
+- **Open-source tools** (Halmos, Echidna, SMTChecker, Slither, Lean 4)
 - **Production-ready** security
 
 ### ✅ Byzantine Fault Tolerance Proven
@@ -60,8 +58,8 @@
 - ✅ Smart contract assertions: SMTChecker complete
 - ✅ Fuzzing: 10M+ Echidna iterations
 - ✅ Static analysis: Slither custom detectors
-- 🔜 Professional audit: Pending ($100k-$200k)
-- 🔜 Bug bounty: Planned ($100k fund)
+- 🔜 Professional audit: Pending
+- 🔜 Bug bounty: Planned
 
 **Next Target:** 8.5-9/10 (after professional audit)
 
@@ -79,5 +77,5 @@
 
 ---
 
-**Built with ❤️ using 100% open-source tools**  
-**Zero cost. Maximum security. Trust math, not vendors.**
+**Built using 100% open-source tools for transparency and reproducibility**  
+**Verification methodology: Mathematical rigor, technical excellence**
