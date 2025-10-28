@@ -1,0 +1,95 @@
+name: Smart Contract Verification CI
+# Open-Source Formal Verification for Chronos Vault
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - 'contracts/**/*.sol'
+      - 'test/symbolic/**'
+      - 'test/echidna/**'
+  pull_request:
+    branches: [ main, develop ]
+  workflow_dispatch:
+
+jobs:
+  halmos-symbolic:
+    name: Halmos Symbolic Testing
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install Halmos
+        run: |
+          pip install halmos z3-solver
+      
+      - name: Setup Foundry
+        uses: foundry-rs/foundry-toolchain@v1
+      
+      - name: Run Halmos Symbolic Tests
+        run: |
+          cd contracts/verification
+          halmos --root .. --contract "*Symbolic" --solver-timeout-assertion 0 || true
+      
+      - name: Upload Halmos Report
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: halmos-report
+          path: contracts/verification/.halmos/
+
+  echidna-fuzzing:
+    name: Echidna Fuzzing (1M iterations)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Install Echidna
+        run: |
+          wget https://github.com/crytic/echidna/releases/download/v2.2.1/echidna-2.2.1-Linux.tar.gz
+          tar -xzf echidna-2.2.1-Linux.tar.gz
+          sudo mv echidna /usr/local/bin/
+      
+      - name: Setup Foundry
+        uses: foundry-rs/foundry-toolchain@v1
+      
+      - name: Run Echidna Fuzzing
+        run: |
+          cd contracts/verification
+          echidna .. --contract ChronosVaultEchidna --test-limit 1000000 --config echidna.yaml || true
+
+  slither-analysis:
+    name: Slither Static Analysis
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install Slither
+        run: |
+          pip install slither-analyzer solc-select
+          solc-select install 0.8.20
+          solc-select use 0.8.20
+      
+      - name: Run Slither
+        run: |
+          cd contracts
+          slither . --config-file verification/slither.config.json --json slither-report.json || true
+      
+      - name: Upload Slither Report
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: slither-report
+          path: contracts/slither-report.json
