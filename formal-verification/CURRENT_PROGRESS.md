@@ -77,7 +77,7 @@
 **Today's Session Progress:**
 - Started at: 8/78 theorems (10.3%)
 - Current: 58/78 theorems (74%)
-- **Gained: 50 proofs in this session! 🚀**
+- **Gained: 50 proofs in this session! **
 
 ---
 
@@ -114,7 +114,7 @@
 
 ---
 
-## 💪 **STRENGTHS OF CURRENT WORK**
+##  **STRENGTHS OF CURRENT WORK**
 
 1. **All axioms well-documented** - Every axiom maps to smart contract invariant
 2. **Security reductions clear** - Cryptographic assumptions explicit
@@ -123,7 +123,7 @@
 
 ---
 
-## 🎉 **ACHIEVEMENTS THIS SESSION**
+##  **ACHIEVEMENTS THIS SESSION**
 
 - **CVTBridge.lean**: 0 → 100% (7 sorry eliminated)
 - **OperationIdUniqueness.lean**: 0 → 100% (2 sorry eliminated)  
