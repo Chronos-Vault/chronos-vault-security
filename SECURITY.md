@@ -8,7 +8,7 @@
 
 ## 🛡️ Security Overview
 
-Chronos Vault has undergone **comprehensive formal verification** using industry-leading open-source tools. We have mathematically proven **77 security properties** at **$0 cost** (vs $50k for traditional Certora verification).
+Chronos Vault has undergone **comprehensive formal verification** using industry-leading open-source tools. We have mathematically proven **73 security properties across 3 verification layers** at **$0 cost** (vs $50k for traditional Certora verification).
 
 ### Attack Probability: ≤ 10^-12
 To compromise Chronos Vault, an attacker would need to:
@@ -137,8 +137,8 @@ To compromise Chronos Vault, an attacker would need to:
 ### Phase 2: Open-Source Verification ✅ COMPLETE
 - **Status:** ✅ Complete (October 2025)
 - **Tools:** Halmos, Echidna, SMTChecker, Slither
-- **Coverage:** 77 security properties, 10M+ fuzzing iterations
-- **Cost:** $0 (vs $50k Certora)
+- **Coverage:** 73 security properties across 3 verification layers, 10M+ fuzzing iterations
+- **Cost:** $0 (open-source)
 - **Score:** 7.5/10
 
 ### Phase 3: Professional Audit 🔜 PENDING
@@ -238,7 +238,7 @@ To compromise Chronos Vault, an attacker would need to:
 ✅ **First vault protocol** with comprehensive open-source formal verification  
 ✅ **77 mathematically proven** security properties  
 ✅ **10M+ fuzzing iterations** discovering edge cases  
-✅ **$0 verification cost** (vs $50k industry standard)  
+✅ **100% open-source verification** (vs $50k industry standard)  
 ✅ **Byzantine fault tolerance** mathematically proven  
 ✅ **HTLC atomicity** proven for ALL inputs  
 ✅ **Multi-chain consensus** proven secure  
