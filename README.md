@@ -2,7 +2,7 @@
 
 <div align="center">
 
-**Mathematical Security Proofs, Audit Reports, and Emergency Response for Trinity Protocol v3.0**
+**Mathematical Security Proofs, Audit Reports, and Emergency Response for Trinity Protocol v3.1**
 
 ![Lean 4](https://img.shields.io/badge/Lean_4-78/78_Proven-brightgreen?style=for-the-badge&logo=lean)
 ![Security](https://img.shields.io/badge/Security-Mathematically_Proven-success?style=for-the-badge)
@@ -28,7 +28,7 @@
 
 ---
 
-## 🎯 Trinity Protocol v3.0 - 100% Formal Verification
+## 🎯 Trinity Protocol v3.1 - 100% Formal Verification
 
 **Status**: **ALL 78 THEOREMS PROVEN** ✅  
 **Date**: November 2, 2025  
@@ -262,7 +262,7 @@ Trinity Protocol provides defense-in-depth through 2-of-3 consensus across three
 
 | Blockchain | Role | Security Property | Deployment |
 |------------|------|-------------------|------------|
-| **Arbitrum L2** | Primary Security | Ethereum security inheritance | `0x4a8Bc58f441Ae7E7eC2879e434D9D7e31CF80e30` |
+| **Arbitrum L2** | Primary Security | Ethereum security inheritance | `0x3E205dc9881Cf0E9377683aDd22bC1aBDBdF462D` |
 | **Solana** | Rapid Validation | High-frequency monitoring | `5oD8S1TtkdJbAX7qhsGticU7JKxjwY4AbEeBdnkUrrKY` |
 | **TON** | Quantum-Resistant Backup | Emergency recovery + post-quantum crypto | `EQDx6yH5WH3Ex47h0PBnOBMzPCsmHdnL2snts3DZBO5CYVVJ` |
 
@@ -363,14 +363,14 @@ We run an active bug bounty program for responsible disclosure:
 
 ### Deployment Status
 
-**Trinity Protocol v3.0:**
+**Trinity Protocol v3.1:**
 - ✅ 78/78 Lean 4 theorems proven
 - ✅ All 4 critical vulnerabilities fixed
 - ✅ CrossChainBridgeOptimized v2.2 production-ready
 - ✅ Deployed: November 3, 2025
 
 **Contract Addresses:**
-- Arbitrum: `0x4a8Bc58f441Ae7E7eC2879e434D9D7e31CF80e30`
+- Arbitrum: `0x3E205dc9881Cf0E9377683aDd22bC1aBDBdF462D`
 - Solana: `5oD8S1TtkdJbAX7qhsGticU7JKxjwY4AbEeBdnkUrrKY`
 - TON: `EQDx6yH5WH3Ex47h0PBnOBMzPCsmHdnL2snts3DZBO5CYVVJ`
 
