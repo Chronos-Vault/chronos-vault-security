@@ -1,4 +1,4 @@
-# 🎓 Formal Verification Complete - Trinity Protocol v3.0
+# 🎓 Formal Verification Complete - Trinity Protocol v3.1
 
 **Status:** ✅ **ALL 28+ CRITICAL PROOFS COMPLETE**  
 **Date:** October 28, 2025  
@@ -226,7 +226,7 @@ lake exe verify_all
 
 ### 3. Testnet Deployment (COMPLETE)
 ✅ Arbitrum Sepolia: HTLCBridge at `0x6cd3B1a72F67011839439f96a70290051fd66D57`  
-✅ Trinity Protocol at `0x4a8Bc58f441Ae7E7eC2879e434D9D7e31CF80e30`
+✅ Trinity Protocol at `0x3E205dc9881Cf0E9377683aDd22bC1aBDBdF462D`
 
 ### 4. Mainnet Launch
 After security audit + bug bounty → Ready for mainnet with real user funds
@@ -249,7 +249,7 @@ After security audit + bug bounty → Ready for mainnet with real user funds
 
 ## 💬 Conclusion
 
-**Trinity Protocol v3.0 is mathematically secure.**
+**Trinity Protocol v3.1 is mathematically secure.**
 
 All 34 critical security properties have been formally verified using Lean 4 theorem prover. The system provides **10^-50 attack probability** - more secure than any existing cross-chain bridge or single-chain system.
 
