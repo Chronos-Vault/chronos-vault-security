@@ -45,17 +45,17 @@ Unlike traditional audits that say "we didn't find bugs", our formal verificatio
 
 | Category | Theorems | Status | Documentation |
 |----------|----------|--------|---------------|
-| **Trinity Protocol** | 6 | ✅ PROVEN | [View Proofs →](./formal-proofs/Consensus/TrinityProtocol.lean) |
-| **HTLC Atomic Swaps** | 5 | ✅ PROVEN | [View Proofs →](./formal-proofs/Contracts/CrossChainBridge.lean) |
-| **ChronosVault** | 6 | ✅ PROVEN | [View Proofs →](./formal-proofs/Contracts/ChronosVault.lean) |
-| **Emergency MultiSig** | 7 | ✅ PROVEN | [View Proofs →](./formal-proofs/Contracts/EmergencyMultiSig.lean) |
-| **Emergency Recovery Nonce** | 10 | ✅ PROVEN | [View Proofs →](./formal-proofs/contracts/EmergencyRecoveryNonce.lean) |
-| **Cryptographic Primitives** | 18 | ✅ PROVEN | [View Proofs →](./formal-proofs/Cryptography/) |
-| **VDF Time-Locks** | 8 | ✅ PROVEN | [View Proofs →](./formal-proofs/TimeLocks/VDF.lean) |
-| **Zero-Knowledge Proofs** | 6 | ✅ PROVEN | [View Proofs →](./formal-proofs/ZeroKnowledge/) |
-| **Quantum Resistance** | 6 | ✅ PROVEN | [View Proofs →](./formal-proofs/PostQuantum/) |
-| **AI Governance** | 6 | ✅ PROVEN | [View Proofs →](./formal-proofs/Governance/) |
-| **TOTAL** | **78/78** | ✅ **100% COMPLETE** | [Full Report →](./FORMAL_VERIFICATION_COMPLETE.md) |
+| **Trinity Protocol** | 6 | ✅ PROVEN | [View Status →](https://github.com/Chronos-Vault/chronos-vault-security/blob/main/docs/formal-verification/FORMAL_VERIFICATION_STATUS.md#1-trinity-protocol-consensus) |
+| **HTLC Atomic Swaps** | 5 | ✅ PROVEN | [View Status →](https://github.com/Chronos-Vault/chronos-vault-security/blob/main/docs/formal-verification/FORMAL_VERIFICATION_STATUS.md#2-htlc-atomic-swaps) |
+| **ChronosVault** | 6 | ✅ PROVEN | [View Status →](https://github.com/Chronos-Vault/chronos-vault-security/blob/main/docs/formal-verification/FORMAL_VERIFICATION_STATUS.md#3-chronosvault-security) |
+| **Emergency MultiSig** | 7 | ✅ PROVEN | [View Status →](https://github.com/Chronos-Vault/chronos-vault-security/blob/main/docs/formal-verification/FORMAL_VERIFICATION_STATUS.md#4-emergency-multisig) |
+| **Emergency Recovery Nonce** | 10 | ✅ PROVEN | [View Status →](https://github.com/Chronos-Vault/chronos-vault-security/blob/main/docs/formal-verification/FORMAL_VERIFICATION_STATUS.md) |
+| **Cryptographic Primitives** | 18 | ✅ PROVEN | [View Status →](https://github.com/Chronos-Vault/chronos-vault-security/blob/main/docs/formal-verification/FORMAL_VERIFICATION_STATUS.md) |
+| **VDF Time-Locks** | 8 | ✅ PROVEN | [View Status →](https://github.com/Chronos-Vault/chronos-vault-security/blob/main/docs/formal-verification/FORMAL_VERIFICATION_STATUS.md) |
+| **Zero-Knowledge Proofs** | 6 | ✅ PROVEN | [View Status →](https://github.com/Chronos-Vault/chronos-vault-security/blob/main/docs/formal-verification/FORMAL_VERIFICATION_STATUS.md) |
+| **Quantum Resistance** | 6 | ✅ PROVEN | [View Status →](https://github.com/Chronos-Vault/chronos-vault-security/blob/main/docs/formal-verification/FORMAL_VERIFICATION_STATUS.md) |
+| **AI Governance** | 6 | ✅ PROVEN | [View Status →](https://github.com/Chronos-Vault/chronos-vault-security/blob/main/docs/formal-verification/FORMAL_VERIFICATION_STATUS.md) |
+| **TOTAL** | **78/78** | ✅ **100% COMPLETE** | [Full Report →](https://github.com/Chronos-Vault/chronos-vault-security/blob/main/docs/formal-verification/FORMAL_VERIFICATION_STATUS.md) |
 
 ---
 
@@ -355,11 +355,11 @@ We run an active bug bounty program for responsible disclosure:
 
 | Document | Description | Link |
 |----------|-------------|------|
-| **SECURITY_VERIFICATION.md** | Cryptographic enforcement proofs | [View →](./docs/security/SECURITY_VERIFICATION.md) |
-| **SECURITY_ARCHITECTURE.md** | Complete security architecture | [View →](./docs/security/SECURITY_ARCHITECTURE.md) |
-| **FOR_DEVELOPERS.md** | Developer security guide | [View →](./docs/formal-verification/FOR_DEVELOPERS.md) |
-| **VERIFY_YOURSELF.md** | Verify formal proofs yourself | [View →](./VERIFY_YOURSELF.md) |
-| **INCIDENT_RESPONSE.md** | Security incident protocol | [View →](./INCIDENT_RESPONSE.md) |
+| **SECURITY_VERIFICATION.md** | Cryptographic enforcement proofs | [View →](https://github.com/Chronos-Vault/chronos-vault-security/blob/main/docs/security/SECURITY_VERIFICATION.md) |
+| **SECURITY_ARCHITECTURE.md** | Complete security architecture | [View →](https://github.com/Chronos-Vault/chronos-vault-security/blob/main/docs/security/SECURITY_ARCHITECTURE.md) |
+| **FOR_DEVELOPERS.md** | Developer security guide | [View →](https://github.com/Chronos-Vault/chronos-vault-security/blob/main/docs/formal-verification/FOR_DEVELOPERS.md) |
+| **FORMAL_VERIFICATION_STATUS.md** | Complete verification report | [View →](https://github.com/Chronos-Vault/chronos-vault-security/blob/main/docs/formal-verification/FORMAL_VERIFICATION_STATUS.md) |
+| **SECURITY_AUDIT_RESPONSE.md** | Vulnerability fixes (v3.0) | [View →](https://github.com/Chronos-Vault/chronos-vault-security/blob/main/docs/SECURITY_AUDIT_RESPONSE_V1.5.md) |
 
 ### Deployment Status
 
