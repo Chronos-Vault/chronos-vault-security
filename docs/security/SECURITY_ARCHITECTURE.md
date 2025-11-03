@@ -432,3 +432,37 @@ function SecurityDashboard({ vaultId }) {
 - **Post-Quantum Blockchain**: Exploring quantum-resistant consensus mechanisms
 - **Secure Multi-Party Computation**: Advanced techniques for distributed trust
 - **Homomorphic Encryption**: Computing on encrypted data without decryption
+
+---
+
+## 9. Additional Resources
+
+### Formal Verification Documentation
+
+- **[Formal Verification Status](../formal-verification/FORMAL_VERIFICATION_STATUS.md)** - Complete status of 78/78 proven theorems
+- **[Verify Yourself Guide](../formal-verification/verify-yourself.md)** - Instructions to verify formal proofs yourself
+- **[For Developers](../formal-verification/FOR_DEVELOPERS.md)** - Developer guide to formal verification
+- **[Theorems Proven](../formal-verification/theorems-proven.md)** - Detailed list of all proven theorems
+- **[Verification Report](../formal-verification/verification-report.md)** - Complete verification report
+
+### Security Documentation
+
+- **[Security Verification](./SECURITY_VERIFICATION.md)** - Cryptographic implementation proofs with deployed addresses
+- **[Security Architecture](./SECURITY_ARCHITECTURE.md)** - This document (system architecture)
+
+### Technical Specifications
+
+- **[API Reference](../api/API_REFERENCE.md)** - Complete API documentation
+- **[Integration Examples](../integration/INTEGRATION_EXAMPLES.md)** - Code examples for integration
+- **[SDK Usage Guide](../sdk/SDK_USAGE.md)** - SDK integration documentation
+
+### Whitepapers
+
+- **[Chronos Vault Whitepaper](../whitepapers/CHRONOS_VAULT_WHITEPAPER.md)** - Complete technical whitepaper
+- **[Mathematical Defense Layer](../whitepapers/MATHEMATICAL_DEFENSE_LAYER.md)** - MDL technical specification
+- **[CVT Token Whitepaper](../whitepapers/CVT_WHITEPAPER.md)** - CVT tokenomics
+
+---
+
+**Chronos Vault - Trust Math, Not Humans™**  
+*Mathematically provable security through formal verification and multi-chain consensus.*
