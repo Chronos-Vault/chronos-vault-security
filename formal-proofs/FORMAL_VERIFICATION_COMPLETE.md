@@ -226,7 +226,7 @@ lake exe verify_all
 
 ### 3. Testnet Deployment (COMPLETE)
 ✅ Arbitrum Sepolia: HTLCBridge at `0x6cd3B1a72F67011839439f96a70290051fd66D57`  
-✅ Trinity Protocol at `0x499B24225a4d15966E118bfb86B2E421d57f4e21`
+✅ Trinity Protocol at `0x4a8Bc58f441Ae7E7eC2879e434D9D7e31CF80e30`
 
 ### 4. Mainnet Launch
 After security audit + bug bounty → Ready for mainnet with real user funds
