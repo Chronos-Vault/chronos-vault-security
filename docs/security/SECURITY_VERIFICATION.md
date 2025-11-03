@@ -1,15 +1,15 @@
-# Trinity Protocol v3.0: Security Verification & Implementation
+# Trinity Protocol v3.1: Security Verification & Implementation
 
 **Chronos Vault - Mathematical Security Proofs**  
 **Date**: November 3, 2025  
-**Version**: Trinity Protocol v3.0 (Production-Ready)  
+**Version**: Trinity Protocol v3.1 (Production-Ready)  
 **Status**: ✅ ALL 78/78 Theorems Proven | ✅ ALL 4 Critical Vulnerabilities Fixed
 
 ---
 
 ## Trust Math, Not Humans
 
-This document proves that Trinity Protocol v3.0 enforces ALL security guarantees **cryptographically**, not just declaratively. Every security claim is backed by either:
+This document proves that Trinity Protocol v3.1 enforces ALL security guarantees **cryptographically**, not just declaratively. Every security claim is backed by either:
 1. **Formal mathematical proofs** (Lean 4 theorem prover)
 2. **Cryptographic enforcement** (on-chain Solidity implementation)
 3. **Deployed smart contracts** (verifiable on blockchain explorers)
@@ -18,7 +18,7 @@ This document proves that Trinity Protocol v3.0 enforces ALL security guarantees
 
 ## 📋 Table of Contents
 
-1. [Deployed Trinity Protocol v3.0 Contracts](#-deployed-trinity-protocol-v30-contracts)
+1. [Deployed Trinity Protocol v3.1 Contracts](#-deployed-trinity-protocol-v30-contracts)
 2. [7 Mathematical Defense Layers](#-7-mathematical-defense-layers-mdl)
 3. [Smart Contract Security Verification](#-smart-contract-security-verification)
 4. [Cryptographic Implementations](#-cryptographic-implementations)
@@ -26,11 +26,11 @@ This document proves that Trinity Protocol v3.0 enforces ALL security guarantees
 
 ---
 
-## 📍 Deployed Trinity Protocol v3.0 Contracts
+## 📍 Deployed Trinity Protocol v3.1 Contracts
 
 | Contract | Address | Network | Status | Explorer |
 |----------|---------|---------|--------|----------|
-| **CrossChainBridgeOptimized v2.2** | `0x4a8Bc58f441Ae7E7eC2879e434D9D7e31CF80e30` | Arbitrum Sepolia | ✅ Production | [View →](https://sepolia.arbiscan.io/address/0x4a8Bc58f441Ae7E7eC2879e434D9D7e31CF80e30) |
+| **CrossChainBridgeOptimized v2.2** | `0x3E205dc9881Cf0E9377683aDd22bC1aBDBdF462D` | Arbitrum Sepolia | ✅ Production | [View →](https://sepolia.arbiscan.io/address/0x3E205dc9881Cf0E9377683aDd22bC1aBDBdF462D) |
 | **HTLCBridge v2.0** | `0x6cd3B1a72F67011839439f96a70290051fd66D57` | Arbitrum Sepolia | ✅ Active | [View →](https://sepolia.arbiscan.io/address/0x6cd3B1a72F67011839439f96a70290051fd66D57) |
 | **ChronosVault** | `0x99444B0B1d6F7b21e9234229a2AC2bC0150B9d91` | Arbitrum Sepolia | ✅ Active | [View →](https://sepolia.arbiscan.io/address/0x99444B0B1d6F7b21e9234229a2AC2bC0150B9d91) |
 | **CVT Token** | `0xFb419D8E32c14F774279a4dEEf330dc893257147` | Arbitrum Sepolia | ✅ Active | [View →](https://sepolia.arbiscan.io/address/0xFb419D8E32c14F774279a4dEEf330dc893257147) |
@@ -43,7 +43,7 @@ This document proves that Trinity Protocol v3.0 enforces ALL security guarantees
 
 ## 🛡️ 7 Mathematical Defense Layers (MDL)
 
-Trinity Protocol v3.0 implements **seven cryptographic layers** providing mathematical security guarantees:
+Trinity Protocol v3.1 implements **seven cryptographic layers** providing mathematical security guarantees:
 
 ### Layer 1: Trinity Protocol™ Multi-Chain Consensus
 
@@ -71,7 +71,7 @@ function submitSolanaProof(bytes32 operationId, ChainProof calldata proof) exter
 
 **Verification**:
 - ✅ Formal proof: `formal-proofs/Consensus/TrinityProtocol.lean` (6 theorems proven)
-- ✅ Deployed contract: 0x4a8Bc58f441Ae7E7eC2879e434D9D7e31CF80e30
+- ✅ Deployed contract: 0x3E205dc9881Cf0E9377683aDd22bC1aBDBdF462D
 - ✅ Security level: P < 10^-12 (requires simultaneous attack on 2/3 blockchains)
 
 ---
@@ -306,7 +306,7 @@ by
 
 ### CrossChainBridgeOptimized v2.2 (Production-Ready)
 
-**Contract Address**: `0x4a8Bc58f441Ae7E7eC2879e434D9D7e31CF80e30`
+**Contract Address**: `0x3E205dc9881Cf0E9377683aDd22bC1aBDBdF462D`
 
 **Security Fixes Applied** (November 3, 2025):
 
@@ -426,7 +426,7 @@ function _computeMerkleRoot(
 
 ## 🎯 Security Summary
 
-**Trinity Protocol v3.0 Security Guarantees**:
+**Trinity Protocol v3.1 Security Guarantees**:
 
 1. ✅ **2-of-3 Multi-Chain Consensus**: Deployed on Arbitrum, Solana, TON
 2. ✅ **HTLC Atomic Swaps**: Claim/refund mutual exclusion proven
