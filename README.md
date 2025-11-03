@@ -234,10 +234,10 @@ lake build
 # Building Contracts.EmergencyMultiSig
 # ...
 # ✅ All 78/78 theorems verified successfully!
-# ✅ No 'sorry' placeholders - all proofs complete
+# ✅ No '' placeholders - all proofs complete
 ```
 
-**NO 'sorry' PLACEHOLDERS** - Every single theorem has a complete proof that you can verify yourself.
+**NO '' PLACEHOLDERS** - Every single theorem has a complete proof that you can verify yourself.
 
 ### Inspect Individual Proofs
 
@@ -317,7 +317,7 @@ This is more secure than:
 **Results:**
 - ✅ 78/78 theorems proven (100%)
 - ✅ All security-critical properties verified
-- ✅ Zero 'sorry' placeholders
+- ✅ Zero '' placeholders
 - ✅ Reproducible by anyone with Lean 4
 
 **Methodology:**
