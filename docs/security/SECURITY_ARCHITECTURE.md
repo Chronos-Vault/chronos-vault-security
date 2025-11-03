@@ -7,13 +7,13 @@
 
 ---
 
-## Trinity Protocol v3.0 Deployment
+## Trinity Protocol v3.1 Deployment
 
 **CrossChainBridgeOptimized v2.2**  
-- **Contract Address**: `0x4a8Bc58f441Ae7E7eC2879e434D9D7e31CF80e30`
+- **Contract Address**: `0x3E205dc9881Cf0E9377683aDd22bC1aBDBdF462D`
 - **Network**: Arbitrum Sepolia (Testnet)
 - **Status**: Production-Ready - All 4 critical vulnerabilities fixed
-- **Explorer**: [View on Arbiscan →](https://sepolia.arbiscan.io/address/0x4a8Bc58f441Ae7E7eC2879e434D9D7e31CF80e30)
+- **Explorer**: [View on Arbiscan →](https://sepolia.arbiscan.io/address/0x3E205dc9881Cf0E9377683aDd22bC1aBDBdF462D)
 
 **Multi-Chain Validators:**
 - **Solana**: `5oD8S1TtkdJbAX7qhsGticU7JKxjwY4AbEeBdnkUrrKY` (Devnet)
