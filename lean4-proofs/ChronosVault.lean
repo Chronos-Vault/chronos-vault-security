@@ -101,7 +101,32 @@ theorem conversion_roundtrip_lower_bound (assets : Nat) (state : VaultState) :
   intro hassets hsupply
   unfold convertToShares convertToAssets
   simp [hassets, hsupply, Nat.pos_iff_ne_zero.mp]
-  sorry -- Requires detailed integer division analysis
+  -- Integer division property: (a * b / c) * c / b ≤ a for positive b, c
+  -- This follows from floor division rounding down:
+  -- shares = assets * totalSupply / totalAssets (rounds down)
+  -- assetsBack = shares * totalAssets / totalSupply (rounds down again)
+  -- 
+  -- Let n = assets, s = totalSupply, a = totalAssets
+  -- shares = (n * s) / a ≤ n * s / a (exact)
+  -- assetsBack = shares * a / s ≤ (n * s / a) * a / s = n * (s * a) / (a * s) = n
+  --
+  -- The double division only loses value (floors), never gains
+  have h1 : (assets * state.totalSupply / state.totalAssets) * state.totalAssets / state.totalSupply ≤ assets := by
+    -- Div and mod relationship: n = (n / d) * d + (n % d)
+    -- So (n / d) * d ≤ n
+    have hdiv1 : assets * state.totalSupply / state.totalAssets * state.totalAssets ≤ assets * state.totalSupply := by
+      exact Nat.div_mul_le_self (assets * state.totalSupply) state.totalAssets
+    -- Then dividing by totalSupply again
+    have hdiv2 : assets * state.totalSupply / state.totalAssets * state.totalAssets / state.totalSupply ≤ 
+                 assets * state.totalSupply / state.totalSupply := by
+      exact Nat.div_le_div_right hdiv1
+    -- And assets * s / s = assets for s > 0
+    have hsimp : assets * state.totalSupply / state.totalSupply = assets := by
+      exact Nat.mul_div_cancel assets hsupply
+    calc (assets * state.totalSupply / state.totalAssets) * state.totalAssets / state.totalSupply 
+      ≤ assets * state.totalSupply / state.totalSupply := hdiv2
+      _ = assets := hsimp
+  exact h1
 
 theorem consensus_required_blocks_unauthorized (state : VaultState) :
   state.consensusRequired → ¬consensusSatisfied state 1 := by
