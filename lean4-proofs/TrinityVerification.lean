@@ -178,12 +178,126 @@ theorem deposit_increases_balance :
 
 /-! ## HTLCChronosBridge Proofs -/
 
-/-- Property: HTLC atomicity - claim and refund are mutually exclusive -/
-theorem htlc_atomicity :
-  ∀ htlc : HTLC, ¬(htlc.isClaimed ∧ htlc.isRefunded) := by
-  intro htlc
-  intro ⟨h_claimed, h_refunded⟩
-  sorry  -- This is enforced by smart contract logic
+/-! ### HTLC State Machine
+    We model HTLCs as a state machine to prove atomicity without axioms.
+    
+    States:
+    - Pending: isClaimed = false, isRefunded = false
+    - Claimed: isClaimed = true, isRefunded = false
+    - Refunded: isClaimed = false, isRefunded = true
+    
+    Transitions:
+    - Pending → Claimed (via claim with valid preimage)
+    - Pending → Refunded (via refund after timelock)
+    
+    There is no transition to (isClaimed = true, isRefunded = true)
+-/
+
+/-- HTLC state type -/
+inductive HTLCState where
+  | Pending : HTLCState
+  | Claimed : HTLCState
+  | Refunded : HTLCState
+deriving DecidableEq, Repr
+
+/-- Convert HTLC to state (partial function - excludes invalid state) -/
+def htlcToState (htlc : HTLC) : Option HTLCState :=
+  if htlc.isClaimed ∧ htlc.isRefunded then none
+  else if htlc.isClaimed then some HTLCState.Claimed
+  else if htlc.isRefunded then some HTLCState.Refunded
+  else some HTLCState.Pending
+
+/-- Initial HTLC is in Pending state -/
+def mkHTLC (id sender receiver amount hashLock timeLock : Nat) : HTLC :=
+  { id := id, sender := sender, receiver := receiver, amount := amount,
+    hashLock := hashLock, timeLock := timeLock, isClaimed := false, isRefunded := false }
+
+/-- Claim transition: Pending → Claimed -/
+def claimHTLC (htlc : HTLC) : Option HTLC :=
+  if htlc.isClaimed ∨ htlc.isRefunded then none
+  else some { htlc with isClaimed := true }
+
+/-- Refund transition: Pending → Refunded -/
+def refundHTLC (htlc : HTLC) : Option HTLC :=
+  if htlc.isClaimed ∨ htlc.isRefunded then none
+  else some { htlc with isRefunded := true }
+
+/-- Initial HTLCs are valid -/
+theorem initial_htlc_valid (id sender receiver amount hashLock timeLock : Nat) :
+    let htlc := mkHTLC id sender receiver amount hashLock timeLock
+    htlcToState htlc = some HTLCState.Pending := by
+  unfold mkHTLC htlcToState
+  simp
+
+/-- Claim produces valid state -/
+theorem claim_valid (htlc : HTLC) :
+    ∀ htlc', claimHTLC htlc = some htlc' → 
+    htlcToState htlc' = some HTLCState.Claimed := by
+  intro htlc' h
+  unfold claimHTLC at h
+  split at h
+  · exact Option.noConfusion h
+  · simp at h
+    subst htlc'
+    unfold htlcToState
+    simp
+
+/-- Refund produces valid state -/
+theorem refund_valid (htlc : HTLC) :
+    ∀ htlc', refundHTLC htlc = some htlc' → 
+    htlcToState htlc' = some HTLCState.Refunded := by
+  intro htlc' h
+  unfold refundHTLC at h
+  split at h
+  · exact Option.noConfusion h
+  · simp at h
+    subst htlc'
+    unfold htlcToState
+    simp
+
+/-- Property: HTLC atomicity - claim and refund are mutually exclusive 
+    Proven via state machine: no valid transition leads to both true -/
+theorem htlc_atomicity_state_machine :
+    ∀ htlc : HTLC, htlcToState htlc ≠ none → ¬(htlc.isClaimed ∧ htlc.isRefunded) := by
+  intro htlc h_valid h_both
+  unfold htlcToState at h_valid
+  simp [h_both] at h_valid
+
+/-- Reachable HTLC states from initial -/
+inductive ReachableHTLC : HTLC → Prop where
+  | initial (id sender receiver amount hashLock timeLock : Nat) : 
+      ReachableHTLC (mkHTLC id sender receiver amount hashLock timeLock)
+  | claimed (htlc htlc' : HTLC) : 
+      ReachableHTLC htlc → claimHTLC htlc = some htlc' → ReachableHTLC htlc'
+  | refunded (htlc htlc' : HTLC) : 
+      ReachableHTLC htlc → refundHTLC htlc = some htlc' → ReachableHTLC htlc'
+
+/-- All reachable HTLCs satisfy atomicity -/
+theorem htlc_atomicity_by_induction :
+    ∀ htlc : HTLC, ReachableHTLC htlc → ¬(htlc.isClaimed ∧ htlc.isRefunded) := by
+  intro htlc h_reach
+  induction h_reach with
+  | initial _ _ _ _ _ _ => 
+    unfold mkHTLC
+    simp
+  | claimed htlc htlc' _ h_claim ih =>
+    unfold claimHTLC at h_claim
+    split at h_claim
+    · exact Option.noConfusion h_claim
+    · simp at h_claim
+      subst htlc'
+      simp
+  | refunded htlc htlc' _ h_refund ih =>
+    unfold refundHTLC at h_refund
+    split at h_refund
+    · exact Option.noConfusion h_refund
+    · simp at h_refund
+      subst htlc'
+      simp
+
+/-- Main atomicity theorem -/
+theorem htlc_atomicity (htlc : HTLC) (h : ReachableHTLC htlc) :
+    ¬(htlc.isClaimed ∧ htlc.isRefunded) := htlc_atomicity_by_induction htlc h
 
 /-- Property: HTLC can only be claimed before timelock -/
 def canClaim (htlc : HTLC) (currentTime : Nat) (preimage : Nat) : Bool :=
