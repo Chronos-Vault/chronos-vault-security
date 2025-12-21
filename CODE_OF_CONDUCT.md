@@ -9,7 +9,7 @@ Version 2.0 | December 2025
 
 Trinity Protocol is committed to fostering a safe, respectful, and collaborative security research community. We believe that **ethical security research** makes blockchain technology safer for everyone.
 
-**"Trust Math, Not Humans"** - Our security philosophy extends to our community: we rely on transparent processes and mathematical proofs, not blind trust.
+**"Trust Math, Not Humans"**  Our security philosophy extends to our community: we rely on transparent processes and mathematical proofs, not blind trust.
 
 ---
 
@@ -17,7 +17,7 @@ Trinity Protocol is committed to fostering a safe, respectful, and collaborative
 
 ### Research & Testing
 - **Test on testnets only** (Arbitrum Sepolia, Solana Devnet, TON Testnet)
-- **Report privately** to security@chronosvault.io
+- **Report privately** to chronosvault@chronosvault.org
 - **Provide clear details** (reproduction steps, impact analysis)
 - **Collaborate respectfully** with our security team
 - **Wait for fixes** before public disclosure (90 days)
@@ -60,7 +60,7 @@ Violations of this code of conduct may result in:
 
 ## Reporting
 
-Report code of conduct violations to: conduct@chronosvault.io
+Report code of conduct violations to: chronosvault@chronosvault.org
 
 All reports are reviewed confidentially.
 
