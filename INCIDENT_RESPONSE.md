@@ -52,7 +52,7 @@ This document outlines Trinity Protocol's emergency response procedures for secu
 
 | Role | Contact |
 |------|---------|
-| Security Team | security@chronosvault.io |
+| Security Team | chronosvault@chronosvault.org |
 | Emergency Hotline | Available to verified partners |
 
 ---
