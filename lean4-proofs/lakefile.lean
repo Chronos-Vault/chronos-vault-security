@@ -2,14 +2,26 @@ import Lake
 open Lake DSL
 
 package «trinity-proofs» where
-  -- add package configuration options here
-
-lean_lib «Trinity» where
-  -- add library configuration options here
-
-@[default_target]
-lean_exe «trinity-proofs» where
-  root := `Main
+  leanOptions := #[
+    ⟨`pp.unicode.fun, true⟩,
+    ⟨`autoImplicit, false⟩
+  ]
 
 require mathlib from git
-  "https://github.com/leanprover-community/mathlib4.git"
+  "https://github.com/leanprover-community/mathlib4.git" @ "v4.14.0"
+
+@[default_target]
+lean_lib TrinityVerification where
+  srcDir := "."
+
+lean_lib Trinity where
+  srcDir := "Trinity"
+
+lean_lib Libraries where
+  srcDir := "Libraries"
+
+lean_lib Solana where
+  srcDir := "Solana"
+
+lean_lib TON where
+  srcDir := "TON"
