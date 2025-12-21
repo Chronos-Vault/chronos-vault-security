@@ -194,7 +194,7 @@ A: Each valid finding advances you through tiers faster.
 
 ## 📞 Contact
 
-- **Security Email:** security@chronosvault.io
+- **Security Email:** chronosvault@chronosvault.org
 - **Discord:** Join our security channel
 - **GitHub:** Open a security advisory
 
