@@ -9,7 +9,7 @@
 
 ## Security Overview
 
-Trinity Protocol™ is a **mathematically provable** 2-of-3 multi-chain consensus verification system. Every security property is formally verified with **184 Lean 4 theorems** - zero trust assumptions, zero `sorry` statements.
+Trinity Protocol™ is a **mathematically provable** 2 of 3 multi-chain consensus verification system. Every security property is formally verified with **184 Lean 4 theorems**  zero trust assumptions, zero `sorry` statements.
 
 ### Attack Probability: ≤ 10⁻¹⁸
 
@@ -83,7 +83,7 @@ theorem execution_is_irreversible :
 **DO NOT** open public issues for security vulnerabilities.
 
 ### Contact
-- **Email:** security@chronosvault.io
+- **Email:** chronosvault@chronosvault.org
 - **Response Time:** 24-48 hours for critical issues
 
 ### Process
@@ -103,7 +103,7 @@ theorem execution_is_irreversible :
 
 ## Trust Math, Not Humans
 
-Trinity Protocol™ is designed so you don't have to trust us - you can verify the mathematics yourself:
+Trinity Protocol™ is designed so you don't have to trust us you can verify the mathematics yourself:
 
 ```bash
 cd lean4-proofs
