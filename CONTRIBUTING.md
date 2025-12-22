@@ -133,9 +133,9 @@ Top contributors are permanently recognized in our Hall of Fame:
 
 ## 📞 Contact
 
-- **Discord:** [Join our server](#)
+- **Discord:** [[Join our server](https://discord.gg/c83azH27)](#)
 - **GitHub Issues:** Open an issue
-- **Security:** security@chronosvault.io
+- **Security:** chronosvault@chronosvault.org
 
 ---
 
