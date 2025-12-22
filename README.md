@@ -155,7 +155,7 @@ We reward security researchers with **roles and recognition**.
 
 ## 📞 Contact
 
-- **Security Issues:** security@chronosvault.io
+- **Security Issues:** chronosvault@chronosvault.org
 - **General:** Open a GitHub issue
 - **Discord:** Join our community
 
